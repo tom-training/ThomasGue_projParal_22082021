@@ -1,0 +1,20 @@
+pour git et github
+
+le push devrait marcher avec 
+
+push -u origin main
+
+pour le pull cela devrait marcher aussi avec origin main
+
+
+MAIS AU CAS OÙ:     PROJPA   ProjPa
+
+au départ j'avais fait:
+
+
+Méthode: démarrer à partir d'un projet distant: 
+
+git remote add ProjPa https://github.com/tom-training/Thom....
+
+git pull ProjPa main
+
