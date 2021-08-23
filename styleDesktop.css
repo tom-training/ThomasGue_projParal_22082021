@@ -9,14 +9,28 @@
 #pageWeb
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
+.element:nth-child(1) 
+{
+    order: 3;
+}
+
+.element:nth-child(2)
+{
+    order: 1;
+}
+
+.element:nth-child(3)
+{
+    order: 2;
+}
 
 .hamburger
 {
     background-color: burlywood;
-    width: 100%;
+    width: 10%;
 }
 
 header li
@@ -27,35 +41,35 @@ header li
 .bandeauGauche
 {
     background-color: chartreuse;
-    width: 100%;
+    width: 10%;
 }
 
 .conteneur
 {
     background-color: cadetblue;
-    width: 100%;
+    width: 80%;
 }
 
 .sloganPortraitPhoto
 {
     background-color: darkgoldenrod;
-    width: 100%;
+    width: 70%;
 }
 
 .blocExperience
 {
     background-color: darkred;
-    width: 100%;
+    width: 70%;
 }
 
 .blocIcone
 {
     background-color: deeppink;
-    width: 100%;
+    width: 70%;
 }
 
 .copyright
 {
     background-color: forestgreen;
-    width: 100%;
+    width: 70%;
 }
