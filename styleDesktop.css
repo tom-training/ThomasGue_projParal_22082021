@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 *
 {
     font-family: Raleway, Courier, monospace, Arial;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 #pageWeb
 {
     display: flex;
     flex-direction: row;
+    background-color: rgb(233,233, 233);
 }
 
 .element:nth-child(1) 
@@ -29,8 +33,12 @@
 
 .hamburger
 {
-    background-color: burlywood;
-    width: 10%;
+    background-color: #fff;
+    border-color: red;
+    border-style: solid;
+    margin: 2%;
+
+    width: 20%;
 }
 
 header li
@@ -40,36 +48,102 @@ header li
 
 .bandeauGauche
 {
-    background-color: chartreuse;
-    width: 10%;
+    border-color: royalblue;
+    border-style: solid;
+    width: 20%;
+    margin: 2%;
+}
+
+.moi
+{
+    border-style: solid;
+    border-color: violet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: poppins;
+    background-color: #fff;
+}
+
+.moi p
+{
+    margin-top: 5%;
+}
+
+.name
+{
+    font-weight: bold;
+}
+
+.idPix
+{
+    border-radius: 50px;
+}
+
+.whereabouts
+{
+    border-bottom-style: solid;
+    border-bottom-color: rgb(121,121,121);
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: grid;
+    
+}
+
+.languages
+{
+    border-style: solid;
+    border-color: darkgoldenrod;
+}
+
+.iconSocialNetworks
+{
+    border-style: solid;
+    border-color: lime;
 }
 
 .conteneur
 {
-    background-color: cadetblue;
-    width: 80%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: red;
+    margin-top: 2%;
+
+
 }
 
 .sloganPortraitPhoto
 {
-    background-color: darkgoldenrod;
-    width: 70%;
+    background-image: url("images/berlin-skyline.jpg");
+    width: 100%;
+    color:#fff;
+    height: 400px;
 }
 
 .blocExperience
 {
-    background-color: darkred;
-    width: 70%;
+    
+    width: 100%;
+    border-style: dotted;
+    border-color: black;
 }
 
 .blocIcone
 {
-    background-color: deeppink;
-    width: 70%;
+    background-color: white;
+    width: 100%;
+    border-style: dashed;
+    border-color: teal;
 }
 
 .copyright
 {
-    background-color: forestgreen;
-    width: 70%;
+    border-color: forestgreen;
+    border-style: groove;
+    width: 100%;
 }
