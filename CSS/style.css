@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@media (max-width: 575.98px) {
+  body {
+    font-family: Roboto, Courier, monospace, Arial;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* keyframes 1/4 used in the DIV launcher for the disappeance of the load progress bar */
+  @keyframes disparition {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  /* keyframes 2/4 used in the DIV mainContainer for the apparition of the index page */
+  @keyframes apparition {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+  /* keyframes 3/4 used in the launcher-titre__un and launcher-titre__deux */
+  @keyframes titel {
+    0% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  /* keyframes 4/4 used in the launcher-progressBar__grey and launcher-progressBar__orange */
+  @keyframes barDeProgressionOrange {
+    0% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  @keyframes barDeProgressionGrey {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  .launcher {
+    width: 100%;
+    /* A REACTIVER WHEN FINISHED */
+    /* display: flex;  */
+    /* A EFFACER */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    animation: disparition 3000ms 2500ms;
+    animation-fill-mode: forwards;
+  }
+  .launcher-titre {
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+  }
+  .launcher-titre__un {
+    color: black;
+    margin-right: 3%;
+    transform-origin: 0% 50%;
+    animation: titel 500ms;
+    animation-fill-mode: backwards;
+  }
+  .launcher-titre__deux {
+    color: black;
+    transform-origin: 0% 50%;
+    animation: titel 500ms 500ms;
+    animation-fill-mode: backwards;
+  }
+  .launcher-progressBar {
+    position: relative;
+    margin-bottom: 3%;
+    width: 60%;
+    height: 2px;
+  }
+  .launcher-progressBar__grey {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 2px solid darkgray;
+    background-color: darkgray;
+    height: 100%;
+    width: 100%;
+    animation: barDeProgressionGrey 1000ms;
+    animation-fill-mode: forwards;
+  }
+  .launcher-progressBar__orange {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 2px solid #FFA500;
+    background-color: #FFA500;
+    height: 100%;
+    width: 100%;
+    transform-origin: 0% 50%;
+    animation: barDeProgressionOrange 1000ms 1000ms;
+    animation-fill-mode: backwards;
+  }
+  .launcher-countdown {
+    color: black;
+    font-weight: lighter;
+  }
+
+  /* Retour au CSS de la page index */
+  #mainContainer {
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    /* A REACTIVER WHEN FINISHED */
+    /* animation: apparition 1000ms 5500ms;
+    animation-fill-mode: backwards; */
+  }
+
+  header {
+    width: 100%;
+    box-shadow: 0px 3px 2px #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: whitesmoke;
+  }
+  header i {
+    color: #7e7e7e;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  @keyframes dotincrease {
+    0% {
+      transform: scale(0);
+      opacity: 0.1;
+    }
+    5% {
+      transform: scale(0.18);
+    }
+    15% {
+      transform: scale(0.4);
+    }
+    20% {
+      transform: scale(0.81);
+    }
+    25% {
+      opacity: 1;
+    }
+    30% {
+      transform: scale(1);
+    }
+    35% {
+      transform: scale(0.81);
+      opacity: 0.1;
+    }
+    40% {
+      transform: scale(0.61);
+    }
+    45% {
+      transform: scale(0.4);
+    }
+    50% {
+      transform: scale(0.18);
+    }
+    55% {
+      opacity: 1;
+    }
+    60% {
+      transform: scale(0);
+    }
+    70% {
+      transform: scale(0);
+      opacity: 0.1;
+    }
+    75% {
+      transform: scale(0.18);
+    }
+    80% {
+      transform: scale(0.4);
+    }
+    85% {
+      transform: scale(0.81);
+    }
+    95%, 100% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /* A FAIRE */
+  #noVisibleLeft {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 60%;
+    border: 2px solid red;
+    display: none;
+    background-color: olivedrab;
+  }
+  #noVisibleLeft .rectangleHaut {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    padding-top: 10%;
+    margin-bottom: 10%;
+  }
+  #noVisibleLeft .cadreIdentite {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid green;
+  }
+  #noVisibleLeft .cadrePhoto {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #noVisibleLeft .cadrePhoto .myPix {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  #noVisibleLeft .cadrePhoto .blocRouge {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+    border: 5px solid red;
+    animation: dotincrease 10000ms;
+    z-index: 2;
+  }
+
+  /* A FAIRE */
+  #noVisibleRight {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 60%;
+    display: block;
+    border: 2px solid pink;
+    background-color: lightgreen;
+    color: red;
+  }
+  #noVisibleRight .rectangleHautDroit {
+    width: 100%;
+    height: 400px;
+  }
+  #noVisibleRight .iconeCroix {
+    color: black;
+    padding: 5px;
+    height: 50%;
+  }
+
+  /* C'EST PROPRE */
+  nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 150px;
+    position: fixed;
+    right: 0;
+    top: 300px;
+    width: 50px;
+    background-color: whitesmoke;
+  }
+  nav .flagSlot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  nav #eng {
+    grid-row: 1;
+    grid-column: 1;
+    border-bottom: 1px solid lightgray;
+  }
+  nav #ger {
+    grid-row: 2;
+    grid-column: 1;
+    border-bottom: 1px solid lightgray;
+  }
+  nav #fren {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  /* C'EST PROPRE */
+  .couvert {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: lightgray;
+  }
+  .couvert-hidden {
+    height: 20px;
+    width: 100%;
+    margin: 5%;
+  }
+  .couvert-photo {
+    width: 90%;
+    height: 215px;
+    background-color: #121212;
+    background-image: url("images/berlin-skyline.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    box-shadow: inset 0px 0px 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .couvert-photo p {
+    color: whitesmoke;
+    font-family: Poppins;
+    background: radial-gradient(#202020, black);
+    box-shadow: 0px 0px 5px 5px black;
+    margin-bottom: 5%;
+    font-size: 0.6em;
+  }
+  .couvert-photo .bouton {
+    background-color: #FFA500;
+    color: black;
+    font-family: Poppins;
+    box-shadow: 0px 0px 5px 5px black;
+    margin-bottom: 5%;
+    padding: 0% 2% 0% 2%;
+    font-size: 0.8em;
+  }
+  .couvert-section {
+    margin: 5%;
+    width: 90%;
+    padding: 5%;
+    /* border: 1px solid brown; */
+  }
+  .couvert-section__blanche {
+    background-color: whitesmoke;
+  }
+  .couvert-section__grise {
+    background-color: lightgray;
+  }
+  .couvert .lesChiffres {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    padding: 0;
+    font-size: 0.8em;
+    gap: 20px;
+  }
+  .couvert .lesChiffres span {
+    color: #FFA500;
+    display: inline-block;
+    height: 100%;
+    padding-right: 3%;
+  }
+  .couvert .lesChiffres .countries {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .couvert .lesChiffres .languages {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .couvert .lesChiffres .typeCompanies {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .couvert .lesChiffres .workFields {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .couvert .lesChiffres .moreInfo {
+    grid-row: 3;
+    grid-column: 1/3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  footer {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+  }
+  footer #cadreFooter {
+    background-color: whitesmoke;
+    /* border: 3px solid purple; */
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+  footer div {
+    margin-top: 2%;
+  }
+  footer .flaticonAttrib {
+    font-size: 0.5em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

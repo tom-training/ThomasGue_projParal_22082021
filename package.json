@@ -1,0 +1,24 @@
+{
+  "name": "ProjetOpenClassRooms",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassRooms",
+  "main": "index.js",
+  "scripts": {
+       "sass": "sass --watch ./CSS/main.scss:./CSS/style.css",
+       "prefix":"postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed/" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+  },
+  "author": "gerkx",
+  "license": "ISC",
+  "browtherslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
+  },
+  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme",
+  "keywords": [
+    "installSASS"
+  ]
+}
