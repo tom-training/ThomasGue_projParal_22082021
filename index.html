@@ -12,49 +12,6 @@
     <title>tgcv</title>
 
     <script type="text/javascript">
-        
-
-        var opacite = 0;
-        var intervalID = 0;
-        
-        
-        
-        function fadeIn(){
-            setInterval(show, 200);
-        }
-
-        function fadeInRight(){
-            setInterval(showRight, 200);
-        }
-        
-        
-
-        function show(){
-            opacite = Number(window.getComputedStyle(document.getElementById("noVisibleLeft")).getPropertyValue("opacity"));
-            if (opacite < 1) {
-
-                while(opacite <1){
-                    opacite = opacite + 0.1;
-                    document.getElementById("noVisibleLeft").style.opacity = opacite;
-                }
-                
-            } else if(opacite>1){
-                clearInterval(intervalID);
-            }
-        }
-
-        
-        function showRight(){
-
-            blocRight = document.getElementById("noVisibleRight");
-            opacity = Number(window.getComputedStyle(blocRight).getPropertyValue("opacity"));
-            if (opacity < 1) {
-                opacity = opacity + 0.1;
-                blocRight.style.opacity = opacity
-            } else {
-                clearInterval(intervalID);
-            }
-        }
     
         function clickClose(){
                
@@ -64,13 +21,13 @@
         }
 
         function clickOpen(){
-            fadeIn();
             document.getElementById("noVisibleLeft").style.display = "block";
+            document.getElementById("noVisibleLeft").style.opacity = "1";
         }
 
         function clickOpenRight(){
-            fadeInRight();
             document.getElementById("noVisibleRight").style.display = "block";
+            document.getElementById("noVisibleRight").style.opacity = "1";
         }
 
         function clickCloseRight(){
@@ -128,9 +85,15 @@
 
         <!-- C'EST PROPRE -->
         <header>
-           <i class="fas fa-ellipsis-v" onclick="clickOpen()"> </i> 
 
-           <a href=" " onclick="clickOpenRight()"> <i class="fas fa-bars"> </i> </a>
+           <div onclick="clickOpen()">
+                <i class="fas fa-ellipsis-v"> </i> 
+           </div> 
+           
+           <div onclick="clickOpenRight()">
+                <i class="fas fa-bars"> </i>
+           </div>
+           
         </header>
         <!-- C'EST PROPRE -->
 
@@ -160,11 +123,11 @@
             <!-- C'EST PROPRE --> 
             
             <!-- A FAIRE --> 
-            <div id="noVisibleLeft" style="opacity: 0;">
+            <div id="noVisibleLeft" style="opacity: 0">
 
                 <article class="rectangleHaut" onclick="clickClose()"> 
-                  
-                    <i class="fas fa-ellipsis-v"> </i>
+                
+                    <i class="fas fa-ellipsis-v"> </i>   
             
                 </article>
 
@@ -180,10 +143,10 @@
             <!-- A FAIRE --> 
 
 
-            <div id="noVisibleRight" style="opacity: 0;">
+            <div id="noVisibleRight" style="opacity: 0">
 
                 <div class="rectangleHautDroit" onclick="clickCloseRight()"> 
-                    
+ 
                     <i class="fas fa-times iconeCroix"></i>
             
                 </div>
