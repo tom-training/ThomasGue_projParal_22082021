@@ -234,6 +234,7 @@
         width: 100%;
     }
 
+    
     @keyframes dotincrease{
         0% {
             transform: scale(0);
@@ -295,6 +296,8 @@
             transform: scale(1);
         }
     }
+    
+
 
     /* A FAIRE */
     #noVisibleLeft{
@@ -302,10 +305,12 @@
         top: 0;
         bottom: 0;
         left: 0;
-        right: 60%;
-        border: 2px solid red;
+        right: 20%;
         display: none;
-        background-color: olivedrab;
+        background-color: white;
+        
+
+        
 
         .rectangleHaut{
             display: flex;
@@ -313,25 +318,30 @@
             padding-right: 10%;
             padding-top: 10%;
             margin-bottom: 10%;
+
+            i{
+                color: #7e7e7e;
+            }
+
+           
         }
 
         .cadreIdentite{
-            height: 70px;
             width: 100%;
             display: flex;
             justify-content: center;
-            border: 2px solid green;
+            padding: 10% 0 10% 0;
         }
 
         .cadrePhoto{
             height: 70px;
             width: 70px;
             border-radius: 50%;
-            border: 2px solid green;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative; 
 
             .myPix{
                 height: 70px;
@@ -344,11 +354,163 @@
                 width: 10px;
                 border-radius: 50%;
                 background-color: red;
-                border: 5px solid red;
-                animation: dotincrease 10000ms;
+                box-shadow: 0 0 3px 3px darkgray;
+                animation: dotincrease 10000ms;   
                 z-index: 2;
+                position: absolute;
+                left: 56px;
+                top: 50px;
             }   
-        }    
+        }  
+        
+        .cadreTexte{
+            padding: 10% 10% 10% 10%;
+            width: 100%;
+            font-size: 0.8em;
+            text-align: center;
+
+            &-name{
+                font-weight: bold;
+            }
+
+            p{
+                margin-bottom: 5%;
+            }
+        }
+
+        .grise{
+            background-color: lightgray;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .cadreInfo{
+                width: 100%;
+                padding: 10% 10% 10% 10%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8em;
+                box-shadow: inset 0px 3px 5px darkgray;
+                
+               li{
+                   margin-bottom: 10%;
+               }
+    
+                &-left{
+                    text-align: left;
+                    list-style: none;
+                    font-weight: bold;
+                }
+    
+                &-right{
+                    text-align: right;
+                    list-style: none;
+                }
+            }
+    
+            .trait{
+                width: 70%;
+                height: 2px;
+                background-color: darkgray;
+                border: none;
+            }
+    
+            .cadreLanguages{
+                width: 100%;
+                font-size: 0.6em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10% 0 10% 0;
+
+                div{
+                    margin-right: 5%;
+                    margin-left: 5%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                
+                &-francais{
+                    .cent{
+                        border: 2px solid orange;
+                    }
+                }
+
+                &-anglais{
+                    position: relative;  
+                    
+                    .quatrevingtquinze{
+                        border: 2px solid orange;
+                    }
+
+                    .incruste{
+                        border: 1px solid lightgray;
+                        background-color: lightgray;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 5px;
+                    }
+                }
+
+                &-allemand{
+                    .soixantequinze{
+                        border: 2px solid;
+                        border-top-color: orange;
+                        border-right-color: lightgray;
+                        border-bottom-color: orange;
+                        border-left-color: orange;
+                    }
+                }
+                
+                .cercle{
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10%;  
+                    animation: chargement 8s 2s ease;
+                    animation-fill-mode: forwards;
+                }
+
+                @keyframes chargement{
+
+                    from{
+                        opacity: 0;
+                    } 
+
+                    to{
+                        opacity: 1;
+                    }
+                }
+
+           
+
+                .innerCercle{
+                    
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+               
+            }
+
+            .cadreCompetences{
+                padding: 10% 0 10% 0;
+                font-size: 0.8em;
+            }
+        }
+        
     }
     /* A FAIRE */
 
