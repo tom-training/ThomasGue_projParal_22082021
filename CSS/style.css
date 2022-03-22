@@ -81,8 +81,8 @@
   }
   .launcher {
     width: 100%;
-    /* A REACTIVER WHEN FINISHED */
-    /* display: flex;  */
+    /* A REACTIVER WHEN FINISHED 
+    display: flex; */
     /* A EFFACER */
     display: none;
     justify-content: center;
@@ -163,7 +163,8 @@
     width: 100%;
     position: relative;
     /* A REACTIVER WHEN FINISHED */
-    /* animation: apparition 1000ms 5500ms;
+    /*
+    animation: apparition 1000ms 5500ms;
     animation-fill-mode: backwards; */
   }
 
@@ -248,6 +249,16 @@
       transform: scale(1);
     }
   }
+  @keyframes barDeCompetenceOrange {
+    0% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
   /* A FAIRE */
   #noVisibleLeft {
     position: fixed;
@@ -256,6 +267,9 @@
     left: 0;
     right: 20%;
     display: none;
+    background-color: lightgrey;
+  }
+  #noVisibleLeft .blanche {
     background-color: white;
   }
   #noVisibleLeft .rectangleHaut {
@@ -272,7 +286,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 10% 0 10% 0;
+    padding: 5% 0 5% 0;
   }
   #noVisibleLeft .cadrePhoto {
     height: 70px;
@@ -302,10 +316,11 @@
     top: 50px;
   }
   #noVisibleLeft .cadreTexte {
-    padding: 10% 10% 10% 10%;
+    padding: 5% 10% 5% 10%;
     width: 100%;
     font-size: 0.8em;
     text-align: center;
+    background-color: white;
   }
   #noVisibleLeft .cadreTexte-name {
     font-weight: bold;
@@ -323,7 +338,7 @@
   }
   #noVisibleLeft .grise .cadreInfo {
     width: 100%;
-    padding: 10% 10% 10% 10%;
+    padding: 5% 10% 5% 10%;
     display: flex;
     justify-content: space-between;
     font-size: 0.8em;
@@ -353,7 +368,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10% 0 10% 0;
+    padding: 5% 0 5% 0;
   }
   #noVisibleLeft .grise .cadreLanguages div {
     margin-right: 5%;
@@ -415,8 +430,74 @@
     align-items: center;
   }
   #noVisibleLeft .grise .cadreCompetences {
-    padding: 10% 0 10% 0;
+    padding: 5% 0 5% 0;
     font-size: 0.8em;
+  }
+  #noVisibleLeft .grise .cadreCompetences i {
+    color: #FFA500;
+    font-size: 0.7em;
+    margin-right: 1em;
+  }
+  #noVisibleLeft .grise .cadreCompIT {
+    width: 100%;
+    padding: 5% 15% 5% 15%;
+    font-size: 0.7em;
+  }
+  #noVisibleLeft .grise .cadreCompIT p {
+    padding: 5% 0 1% 0;
+  }
+  @keyframes barLoad {
+    0% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  #noVisibleLeft .grise .cadreCompIT .barProg {
+    position: relative;
+    background-color: black;
+    height: 0.2em;
+    width: 100%;
+  }
+  #noVisibleLeft .grise .cadreCompIT .barProg__grey {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #eaeaea;
+    height: 3px;
+    width: 100%;
+  }
+  #noVisibleLeft .grise .cadreCompIT .barProg__orange {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #FFA500;
+    height: 3px;
+  }
+  #noVisibleLeft .grise .cadreCompIT .barProg .percentHigh {
+    width: 90%;
+    animation: barLoad 5000ms 500ms;
+    animation-fill-mode: backwards;
+    transform-origin: 0% 50%;
+  }
+  #noVisibleLeft .grise .cadreCompIT .barProg .percentMedium {
+    width: 75%;
+    animation: barLoad 5000ms 500ms;
+    animation-fill-mode: backwards;
+    transform-origin: 0% 50%;
+  }
+  #noVisibleLeft .grise .cadreCompIT .barProg .percentLow {
+    width: 60%;
+    animation: barLoad 5000ms 500ms;
+    animation-fill-mode: backwards;
+    transform-origin: 0% 50%;
   }
 
   /* A FAIRE */
@@ -427,18 +508,34 @@
     right: 0;
     left: 60%;
     display: block;
-    border: 2px solid pink;
-    background-color: lightgreen;
-    color: red;
+    background-color: #eaeaea;
+    box-shadow: inset 3px 3px 3px lightgrey;
   }
   #noVisibleRight .rectangleHautDroit {
-    width: 100%;
-    height: 400px;
+    background-color: white;
+    box-shadow: 0px 3px 2px #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
   }
   #noVisibleRight .iconeCroix {
-    color: black;
-    padding: 5px;
+    color: #7e7e7e;
     height: 50%;
+    margin-left: 10%;
+  }
+  #noVisibleRight .cadreMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15%;
+    color: #7e7e7e;
+  }
+  #noVisibleRight .cadreMenu a {
+    display: block;
+    margin-bottom: 30%;
+    color: #7e7e7e;
   }
 
   /* C'EST PROPRE */
@@ -502,6 +599,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    border-radius: 15px;
   }
   .couvert-photo p {
     color: whitesmoke;
@@ -519,6 +617,7 @@
     margin-bottom: 5%;
     padding: 0% 2% 0% 2%;
     font-size: 0.8em;
+    border-radius: 20px;
   }
   .couvert-section {
     margin: 5%;

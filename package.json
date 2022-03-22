@@ -1,11 +1,12 @@
 {
   "name": "ProjetOpenClassRooms",
   "version": "1.0.0",
-  "description": "Projet 3 OpenClassRooms",
+  "description": "Projet Personnel",
   "main": "index.js",
   "scripts": {
-       "sass": "sass --watch ./CSS/main.scss:./CSS/style.css",
-       "prefix":"postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed/" 
+    "sass": "sass --watch ./CSS/main.scss:./CSS/style.css ./CSS/experience.scss:./CSS/experience.css",
+    "prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed/",
+    "build": "postcss ./CSS/experience.css --use autoprefixer -d ./CSS/prefixed"
   },
   "repository": {
     "type": "git",

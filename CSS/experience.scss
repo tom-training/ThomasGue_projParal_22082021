@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media (max-width: 575.98px) {
+
+    // page experience.html
+
+    // page experience et education
+    body{
+        font-family: Roboto, Courier, monospace, Arial;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #eaeaea;
+    }
+    
+    // page experience et education
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    // page experience et education
+    a{
+        text-decoration: none;
+    }
+
+    $primaryColor: black;
+    $secondaryColor: darkgray;
+    $thirdColor: #FFA500;
+
+   
+    // page experience et education
+    #mainContainer{
+        max-width: 550px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+
+        background-color: #eaeaea;
+
+    }
+
+    #noVisibleRight{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 60%;
+        display: block;
+        
+        background-color: #eaeaea;
+        box-shadow: inset 3px 3px 3px lightgrey;
+        
+
+        .rectangleHautDroit{
+            
+            background-color: white;
+        
+            box-shadow: 0px 3px 2px #cfcfcf;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            
+            height: 40px;
+
+        }
+        .iconeCroix{
+            color: #7e7e7e; 
+            height: 50%;
+            margin-left: 10%;
+        }
+
+        .cadreMenu{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 15%;
+
+            color: #7e7e7e;
+
+            a{
+                display: block;
+                margin-bottom: 30%;
+                color: #7e7e7e;
+            }
+        }
+    }
+
+
+
+
+    // page experience 
+    header{
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10% 10% 10% 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-color: #eaeaea;  
+
+        i{
+            color: #7e7e7e;
+        }
+        
+
+    }
+
+    // page experience et education
+    .couvertHidden{
+
+        height: 40px;
+        width: 100%;
+        margin: 5%;
+
+    }
+
+    // page experience et education
+    main{
+        width: 100%;
+
+        ul{
+            //list-style-type: none;
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+            
+        }
+    }
+
+    // page experience
+    .job{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 5px;
+
+        &-title{
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        &-firm{
+            font-style: italic;
+            margin-bottom: 0.5em;
+        }
+
+        &-dates{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #eaeaea, lightgray);
+            
+            height: 2em;
+            width: 40%;
+            text-decoration: none;
+            margin-bottom: 0.5em;
+        }
+
+        &-details{
+
+            &__descr{
+                margin-bottom: 1em;
+            }
+            &__syst{
+                margin-bottom: 0.5em;
+            }
+            &__contract{
+                margin-bottom: 0.5em;
+            }
+
+        }
+
+        &-whereabouts{
+            color: $thirdColor;
+            margin-top: 2px;
+        }
+    }
+
+   
+    // page experience et education
+    footer{
+        background-color: lightgrey;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 4%;
+
+
+
+        #cadreFooter{
+            background-color: whitesmoke;
+            width: 90%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+            padding: 0 0 3% 3%;
+        }
+
+        div{
+            margin-top: 2%;
+        }
+
+        .flaticonAttrib{
+            font-size: 0.5em;
+        }
+
+    }
+
+    // page education
+
+    .headerEducation{
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10% 10% 10% 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        // trouver la propriété pour avoir la primauté   
+
+
+        div{
+            
+            margin-left: 5%;
+            justify-self: flex-end;
+        }
+
+        i{
+            color: #7e7e7e;
+
+        }
+    }
+
+    // page education
+    .couvertHiddenEducation{
+
+        height: 40px;
+        width: 100%;
+        margin: 5%;
+
+    }
+
+    .formation{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 5px;
+
+        &-title{
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        &-year{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #eaeaea, lightgray);
+            
+            height: 2em;
+            width: 40%;
+            text-decoration: none;
+            margin-bottom: 0.5em;
+        }
+
+        &-details{
+            margin-bottom: 0.5em;
+        }
+
+    }
+
+    h2{
+        padding: 5% 5% 0 5%;
+    }
+    .languages{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 5px;
+    }
+
+    // page contact
+
+    .headerContact{
+        width: 100%;
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10% 10% 10% 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        // trouver la propriété pour avoir la primauté   
+
+
+        div{
+            
+            margin-left: 5%;
+            justify-self: flex-end;
+        }
+
+        i{
+            color: #7e7e7e;
+
+        }
+    }
+
+    .couvertHiddenContact{
+
+        height: 40px;
+        width: 100%;
+        margin: 5%;
+
+    }
+
+    .contact{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 5px;
+    }
+
+
+    // page impressum
+
+    .headerImpressum{
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10% 10% 10% 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        // trouver la propriété pour avoir la primauté   
+
+
+        &-title{
+            font-size: 1em;
+        }
+
+        div{
+            
+            margin-left: 5%;
+            justify-self: flex-end;
+        }
+
+        i{
+            color: #7e7e7e;
+
+        }
+    }
+
+    .couvertHiddenImpressum{
+
+        height: 40px;
+        width: 100%;
+        margin: 5%;
+
+    }
+
+    .impressum{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 5px;
+    }
+}

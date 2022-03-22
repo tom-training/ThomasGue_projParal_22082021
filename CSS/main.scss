@@ -106,11 +106,11 @@
     .launcher{
         width: 100%;
 
-        /* A REACTIVER WHEN FINISHED */
-        /* display: flex;  */
+        /* A REACTIVER WHEN FINISHED 
+        display: flex; */
         
-        /* A EFFACER */
-        display: none;    
+        /* A EFFACER */ 
+        display: none;   
 
 
         justify-content: center;
@@ -207,7 +207,8 @@
         position: relative;
 
         /* A REACTIVER WHEN FINISHED */
-        /* animation: apparition 1000ms 5500ms;
+        /*
+        animation: apparition 1000ms 5500ms;
         animation-fill-mode: backwards; */
      }
 
@@ -223,7 +224,7 @@
         left: 0;
         right: 0;
         height: 20px;
-        background-color: whitesmoke;
+        background-color: whitesmoke;   
 
         i{
             color: #7e7e7e;
@@ -297,7 +298,18 @@
         }
     }
     
+    @keyframes barDeCompetenceOrange{
 
+        0%{
+            transform: scaleX(0);
+            opacity: 0;
+        }
+
+        100%{
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
 
     /* A FAIRE */
     #noVisibleLeft{
@@ -307,11 +319,12 @@
         left: 0;
         right: 20%;
         display: none;
-        background-color: white;
-        
+        background-color: lightgrey;
 
+        .blanche{
+            background-color: white;
+        }
         
-
         .rectangleHaut{
             display: flex;
             justify-content: flex-end;
@@ -322,15 +335,13 @@
             i{
                 color: #7e7e7e;
             }
-
-           
         }
 
         .cadreIdentite{
             width: 100%;
             display: flex;
             justify-content: center;
-            padding: 10% 0 10% 0;
+            padding: 5% 0 5% 0;
         }
 
         .cadrePhoto{
@@ -341,7 +352,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative; 
+            position: relative;
 
             .myPix{
                 height: 70px;
@@ -364,10 +375,11 @@
         }  
         
         .cadreTexte{
-            padding: 10% 10% 10% 10%;
+            padding: 5% 10% 5% 10%;
             width: 100%;
             font-size: 0.8em;
             text-align: center;
+            background-color: white;
 
             &-name{
                 font-weight: bold;
@@ -388,7 +400,7 @@
 
             .cadreInfo{
                 width: 100%;
-                padding: 10% 10% 10% 10%;
+                padding: 5% 10% 5% 10%;
                 display: flex;
                 justify-content: space-between;
                 font-size: 0.8em;
@@ -423,7 +435,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 10% 0 10% 0;
+                padding: 5% 0 5% 0;
 
                 div{
                     margin-right: 5%;
@@ -491,29 +503,109 @@
                     }
                 }
 
-           
-
                 .innerCercle{
-                    
                     height: 30px;
                     width: 30px;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                }
-               
+                } 
             }
 
             .cadreCompetences{
-                padding: 10% 0 10% 0;
+                padding: 5% 0 5% 0;
                 font-size: 0.8em;
+
+                i{
+                    color: #FFA500;
+                    font-size: 0.7em;
+                    margin-right: 1em;
+                }
             }
-        }
-        
+
+            .cadreCompIT{
+                width: 100%;
+                padding: 5% 15% 5% 15%;
+                font-size: 0.7em;
+
+                p{
+                    padding: 5% 0 1% 0;
+                }
+
+                @keyframes barLoad{
+                    0%{
+                        transform: scaleX(0);
+                        opacity: 0;
+                    }
+            
+                    100%{
+                        transform: scaleX(1);
+                        opacity: 1;
+                    }    
+                }
+
+
+                .barProg{
+                    position: relative;
+                    background-color: black;
+                    height: 0.2em;
+                    width: 100%;
+
+                    &__grey{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        
+                        
+                        background-color: #eaeaea;
+                        height: 3px;
+                        width: 100%;
+                        
+                    }
+
+                    &__orange{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        
+                        background-color: $thirdColor;
+                        height: 3px;
+                    } 
+
+                    
+                    .percentHigh{
+                        width: 90%;
+                        animation: barLoad 5000ms 500ms;
+                        animation-fill-mode: backwards;
+                        transform-origin: 0% 50%;
+                    } 
+
+                    .percentMedium{
+                        width: 75%;
+                        animation: barLoad 5000ms 500ms;
+                        animation-fill-mode: backwards;
+                        transform-origin: 0% 50%;
+                    } 
+                    
+                    .percentLow{
+                        width: 60%;
+                        animation: barLoad 5000ms 500ms;
+                        animation-fill-mode: backwards;
+                        transform-origin: 0% 50%;
+                    } 
+                    
+                }
+            }
+        }        
     }
     /* A FAIRE */
 
+    // DEBUT DE LA FENETRE DE DROITE
 
     #noVisibleRight{
         position: fixed;
@@ -522,22 +614,50 @@
         right: 0;
         left: 60%;
         display: block;
-        border: 2px solid pink;
-        background-color: lightgreen;
-        color: red;
+        
+        background-color: #eaeaea;
+        box-shadow: inset 3px 3px 3px lightgrey;
+        
 
         .rectangleHautDroit{
-            width: 100%;
-            height: 400px;
+            
+            background-color: white;
+            
+
+            box-shadow: 0px 3px 2px #cfcfcf;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            
+            height: 40px;
+
         }
         .iconeCroix{
-            color: black;
-            padding: 5px;  
+            color: #7e7e7e; 
             height: 50%;
+            margin-left: 10%;
+        }
+
+        .cadreMenu{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 15%;
+
+            color: #7e7e7e;
+
+            a{
+                display: block;
+                margin-bottom: 30%;
+                color: #7e7e7e;
+            }
         }
     }
 
-
+    // FIN DU STYLE DE LA FENETRE DE DROITE 
 
 
     /* C'EST PROPRE */
@@ -609,6 +729,7 @@
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
+            border-radius: 15px;
 
             p{
                 color: whitesmoke;
@@ -626,7 +747,8 @@
                 box-shadow: 0px 0px 5px 5px black;
                 margin-bottom: 5%;
                 padding: 0% 2% 0% 2%; 
-                font-size: 0.8em;               
+                font-size: 0.8em;  
+                border-radius: 20px;             
             }
         }
 
@@ -727,8 +849,5 @@
         .flaticonAttrib{
             font-size: 0.5em;
         }
-
-    }
-
-    
+    }  
 }
