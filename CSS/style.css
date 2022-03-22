@@ -336,6 +336,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
   }
   #noVisibleLeft .grise .cadreInfo {
     width: 100%;
