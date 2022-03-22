@@ -315,12 +315,11 @@
     #noVisibleLeft{
         position: fixed;
         top: 0;
-        bottom: 5%;
         left: 0;
         right: 20%;
         display: none;
         background-color: lightgrey;
-        height: 100vh;
+        max-height: 100%;
         overflow-y: scroll;
 
         .blanche{
