@@ -100,7 +100,7 @@
 
 
     // page experience 
-    header{
+    .headerExp{
         width: 100%;
         
         display: flex;
@@ -112,7 +112,11 @@
         left: 0;
         right: 0;
         height: 40px;
-        background-color: #eaeaea;  
+        background-color: #eaeaea; 
+        
+        h1{
+            font-size: 1.9em;
+        }
 
         i{
             color: #7e7e7e;
@@ -171,6 +175,7 @@
             width: 40%;
             text-decoration: none;
             margin-bottom: 0.5em;
+            font-size: 0.8em;
         }
 
         &-details{
@@ -201,6 +206,7 @@
         justify-content: center;
         align-items: flex-end;
         padding-top: 4%;
+        margin-top: 10%;
 
 
 
@@ -243,7 +249,7 @@
         left: 0;
         right: 0;
         height: 40px;
-        // trouver la propriété pour avoir la primauté   
+        background-color: #eaeaea;  
 
 
         div{
@@ -277,6 +283,10 @@
         &-title{
             font-size: 1.2em;
             margin-bottom: 0.5em;
+
+            a{
+                font-style: italic;
+            }
         }
 
         &-year{
@@ -323,7 +333,7 @@
         left: 0;
         right: 0;
         height: 40px;
-        // trouver la propriété pour avoir la primauté   
+        background-color: #eaeaea; 
 
 
         div{
@@ -369,7 +379,7 @@
         left: 0;
         right: 0;
         height: 40px;
-        // trouver la propriété pour avoir la primauté   
+        background-color: #eaeaea;
 
 
         &-title{
