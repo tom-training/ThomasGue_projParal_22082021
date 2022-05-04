@@ -24,7 +24,8 @@
 
     $primaryColor: black;
     $secondaryColor: darkgray;
-    $thirdColor: #FFA500;
+    $thirdColor: #9356dc;
+    $fourthColor: #721cad;
 
     
 
@@ -452,7 +453,7 @@
                 
                 &-francais{
                     .cent{
-                        border: 2px solid orange;
+                        border: 2px solid $thirdColor;
                     }
                 }
 
@@ -460,7 +461,7 @@
                     position: relative;  
                     
                     .quatrevingtquinze{
-                        border: 2px solid orange;
+                        border: 2px solid $thirdColor;
                     }
 
                     .incruste{
@@ -477,10 +478,10 @@
                 &-allemand{
                     .soixantequinze{
                         border: 2px solid;
-                        border-top-color: orange;
+                        border-top-color: $thirdColor;
                         border-right-color: lightgray;
-                        border-bottom-color: orange;
-                        border-left-color: orange;
+                        border-bottom-color: $thirdColor;
+                        border-left-color: $thirdColor;
                     }
                 }
                 
@@ -522,7 +523,7 @@
                 font-size: 0.8em;
 
                 i{
-                    color: #FFA500;
+                    color: $fourthColor;
                     font-size: 0.7em;
                     margin-right: 1em;
                 }
@@ -746,7 +747,7 @@
 
             .bouton{
                 background-color: $thirdColor;
-                color: black;
+                color: white;
                 font-family: Poppins;
                 box-shadow: 0px 0px 5px 5px black;
                 margin-bottom: 5%;
@@ -781,7 +782,7 @@
             gap: 20px;
 
             span{
-                color: $thirdColor;
+                color: $fourthColor;
                 display: inline-block;
                 height: 100%;
                 padding-right: 3%; 

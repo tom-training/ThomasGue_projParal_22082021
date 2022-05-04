@@ -140,8 +140,8 @@
     right: 0;
     top: 0;
     bottom: 0;
-    border: 2px solid #FFA500;
-    background-color: #FFA500;
+    border: 2px solid #9356dc;
+    background-color: #9356dc;
     height: 100%;
     width: 100%;
     transform-origin: 0% 50%;
@@ -380,13 +380,13 @@
     align-items: center;
   }
   #noVisibleLeft .grise .cadreLanguages-francais .cent {
-    border: 2px solid orange;
+    border: 2px solid #9356dc;
   }
   #noVisibleLeft .grise .cadreLanguages-anglais {
     position: relative;
   }
   #noVisibleLeft .grise .cadreLanguages-anglais .quatrevingtquinze {
-    border: 2px solid orange;
+    border: 2px solid #9356dc;
   }
   #noVisibleLeft .grise .cadreLanguages-anglais .incruste {
     border: 1px solid lightgray;
@@ -399,10 +399,10 @@
   }
   #noVisibleLeft .grise .cadreLanguages-allemand .soixantequinze {
     border: 2px solid;
-    border-top-color: orange;
+    border-top-color: #9356dc;
     border-right-color: lightgray;
-    border-bottom-color: orange;
-    border-left-color: orange;
+    border-bottom-color: #9356dc;
+    border-left-color: #9356dc;
   }
   #noVisibleLeft .grise .cadreLanguages .cercle {
     height: 35px;
@@ -436,7 +436,7 @@
     font-size: 0.8em;
   }
   #noVisibleLeft .grise .cadreCompetences i {
-    color: #FFA500;
+    color: #721cad;
     font-size: 0.7em;
     margin-right: 1em;
   }
@@ -480,7 +480,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #FFA500;
+    background-color: #9356dc;
     height: 3px;
   }
   #noVisibleLeft .grise .cadreCompIT .barProg .percentHigh {
@@ -612,8 +612,8 @@
     font-size: 0.6em;
   }
   .couvert-photo .bouton {
-    background-color: #FFA500;
-    color: black;
+    background-color: #9356dc;
+    color: white;
     font-family: Poppins;
     box-shadow: 0px 0px 5px 5px black;
     margin-bottom: 5%;
@@ -642,7 +642,7 @@
     gap: 20px;
   }
   .couvert .lesChiffres span {
-    color: #FFA500;
+    color: #721cad;
     display: inline-block;
     height: 100%;
     padding-right: 3%;
