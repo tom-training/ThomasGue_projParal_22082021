@@ -23,3 +23,4 @@ POINT IMPORTANT :
 Le git 1302601 est la version qui contient le code javascript qui ne marche pas encore faute de connaissances javascript,
 je vais supprimer ce code javascript et me contenter d'une ouverture et d'une fermeture basique sans animation des volets noVisibleLeft et noVisibleRight
 
+Le git 3f75be2 est la version avant le SCSS de la version tablette
