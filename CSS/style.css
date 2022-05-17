@@ -1419,10 +1419,11 @@
   footer #cadreFooter {
     background-color: whitesmoke;
     /* border: 3px solid purple; */
-    width: 90%;
+    width: 60%;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
+    margin-left: 33%;
   }
   footer div {
     margin-top: 2%;

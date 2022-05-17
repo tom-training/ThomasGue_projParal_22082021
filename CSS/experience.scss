@@ -154,7 +154,7 @@
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius: 15px;
 
         &-title{
             font-size: 1.2em;
@@ -280,7 +280,7 @@
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius:20px;
 
         &-title{
             font-size: 1.2em;
@@ -318,7 +318,7 @@
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius: 20px;
     }
 
     // page contact
@@ -352,7 +352,7 @@
 
     .couvertHiddenContact{
 
-        height: 40px;
+        height: 50px;
         width: 100%;
         margin: 5%;
 
@@ -363,7 +363,7 @@
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius: 20px;
     }
 
 
@@ -402,7 +402,7 @@
 
     .couvertHiddenImpressum{
 
-        height: 40px;
+        height: 45px;
         width: 100%;
         margin: 5%;
 
@@ -413,7 +413,7 @@
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius: 20px;
     }
 }
 
@@ -457,9 +457,7 @@
         flex-wrap: wrap;
         width: 100%;
         position: relative;
-
         background-color: #eaeaea;
-
     }
 
     #noVisibleRight{
@@ -470,15 +468,12 @@
         right: 0;
         left: 60%;
         display: block;
-        
         background-color: #eaeaea;
         box-shadow: inset 3px 3px 3px lightgrey;
-        
 
         .rectangleHautDroit{
             
             background-color: white;
-        
             box-shadow: 0px 3px 2px #cfcfcf;
 
             display: flex;
@@ -544,7 +539,7 @@
     // page experience et education
     .couvertHidden{
 
-        height: 40px;
+        height: 55px;
         width: 100%;
         margin: 5%;
 
@@ -568,16 +563,16 @@
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius: 20px;
 
         &-title{
             font-size: 1.2em;
-            margin-bottom: 0.5em;
+            margin-bottom: 1em;
         }
 
         &-firm{
             font-style: italic;
-            margin-bottom: 0.5em;
+            margin-bottom: 1em;
         }
 
         &-dates{
@@ -590,7 +585,7 @@
             height: 2em;
             width: 40%;
             text-decoration: none;
-            margin-bottom: 0.5em;
+            margin-bottom: 1em;
             font-size: 0.8em;
         }
 
@@ -635,7 +630,7 @@
             justify-content: center;
             align-items: flex-start;
 
-            margin-top: 5%;
+            margin-top: 25%;
             margin-bottom: 5%;
 
             padding: 0 0 3% 3%;
@@ -659,7 +654,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10% 10% 10% 5%;
+        padding: 5% 10% 5% 5%;
         position: fixed;
         top: 0;
         left: 0;
@@ -683,7 +678,7 @@
     // page education
     .couvertHiddenEducation{
 
-        height: 40px;
+        height: 55px;
         width: 100%;
         margin: 5%;
 
@@ -694,11 +689,11 @@
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius: 20px;
 
         &-title{
             font-size: 1.2em;
-            margin-bottom: 0.5em;
+            margin-bottom: 1em;
 
             a{
                 font-style: italic;
@@ -715,7 +710,7 @@
             height: 2em;
             width: 40%;
             text-decoration: none;
-            margin-bottom: 0.5em;
+            margin-bottom: 1em;
         }
 
         &-details{
@@ -725,14 +720,14 @@
     }
 
     h2{
-        padding: 5% 5% 0 5%;
+        padding: 0 5% 0 5%;
     }
     .languages{
         margin: 4% 4% 4% 4%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius: 20px;
     }
 
     // page contact
@@ -743,7 +738,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10% 10% 10% 5%;
+        padding: 5% 10% 5% 5%;
         position: fixed;
         top: 0;
         left: 0;
@@ -766,7 +761,7 @@
 
     .couvertHiddenContact{
 
-        height: 40px;
+        height: 20px;
         width: 100%;
         margin: 5%;
 
@@ -777,7 +772,7 @@
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius: 20px;
     }
 
 
@@ -789,7 +784,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10% 10% 10% 5%;
+        padding: 5% 10% 5% 5%;
         position: fixed;
         top: 0;
         left: 0;
@@ -816,7 +811,7 @@
 
     .couvertHiddenImpressum{
 
-        height: 40px;
+        height: 25px;
         width: 100%;
         margin: 5%;
 
@@ -827,6 +822,6 @@
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
-        border-radius: 5px;
+        border-radius: 20px;
     }
 }
