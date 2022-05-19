@@ -825,3 +825,413 @@
         border-radius: 20px;
     }
 }
+
+@media (min-width: 991.99px) {
+
+    // page experience.html
+
+    // page experience et education
+    body{
+        font-family: Roboto, Courier, monospace, Arial;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #eaeaea;
+    }
+    
+    // page experience et education
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    // page experience et education
+    a{
+        text-decoration: none;
+    }
+
+    $primaryColor: black;
+    $secondaryColor: darkgray;
+    $thirdColor: #9356dc;
+
+   
+    // page experience et education
+    #mainContainer{
+        max-width: 950px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        background-color: #eaeaea;
+    }
+
+    #noVisibleRight{
+        opacity: 1;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 60%;
+        display: block;
+        background-color: #eaeaea;
+        box-shadow: inset 3px 3px 3px lightgrey;
+
+        .rectangleHautDroit{
+            
+            background-color: white;
+            box-shadow: 0px 3px 2px #cfcfcf;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            
+            height: 40px;
+
+        }
+        .iconeCroix{
+            color: #7e7e7e; 
+            height: 50%;
+            margin-left: 10%;
+        }
+
+        .cadreMenu{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 15%;
+
+            color: #7e7e7e;
+
+            a{
+                display: block;
+                margin-bottom: 30%;
+                color: #7e7e7e;
+            }
+        }
+    }
+
+
+
+
+    // page experience 
+    .headerExp{
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5% 10% 5% 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 10%;
+        background-color: #eaeaea; 
+        
+        h1{
+            font-size: 1.9em;
+        }
+
+        i{
+            color: #7e7e7e;
+        }
+        
+
+    }
+
+    // page experience et education
+    .couvertHidden{
+
+        height: 55px;
+        width: 100%;
+        margin: 5%;
+
+    }
+
+    // page experience et education
+    main{
+        width: 100%;
+
+        ul{
+            //list-style-type: none;
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+            
+        }
+    }
+
+    // page experience
+    .job{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 20px;
+
+        &-title{
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        &-firm{
+            font-style: italic;
+            margin-bottom: 1em;
+        }
+
+        &-dates{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #eaeaea, lightgray);
+            
+            height: 2em;
+            width: 40%;
+            text-decoration: none;
+            margin-bottom: 1em;
+            font-size: 0.8em;
+        }
+
+        &-details{
+
+            &__descr{
+                margin-bottom: 1em;
+            }
+            &__syst{
+                margin-bottom: 0.5em;
+            }
+            &__contract{
+                margin-bottom: 0.5em;
+            }
+
+        }
+
+        &-whereabouts{
+            color: $thirdColor;
+            margin-top: 2px;
+        }
+    }
+
+   
+    // page experience et education
+    footer{
+        background-color: lightgrey;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 4%;
+        margin-top: 10%;
+
+
+
+        #cadreFooter{
+            background-color: whitesmoke;
+            width: 90%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            margin-top: 25%;
+            margin-bottom: 5%;
+
+            padding: 0 0 3% 3%;
+        }
+
+        div{
+            margin-top: 2%;
+        }
+
+        .flaticonAttrib{
+            font-size: 0.5em;
+        }
+
+    }
+
+    // page education
+
+    .headerEducation{
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5% 10% 5% 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-color: #eaeaea;  
+
+
+        div{
+            
+            margin-left: 5%;
+            justify-self: flex-end;
+        }
+
+        i{
+            color: #7e7e7e;
+
+        }
+    }
+
+    // page education
+    .couvertHiddenEducation{
+
+        height: 55px;
+        width: 100%;
+        margin: 5%;
+
+    }
+
+    .formation{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 20px;
+
+        &-title{
+            font-size: 1.2em;
+            margin-bottom: 1em;
+
+            a{
+                font-style: italic;
+            }
+        }
+
+        &-year{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #eaeaea, lightgray);
+            
+            height: 2em;
+            width: 40%;
+            text-decoration: none;
+            margin-bottom: 1em;
+        }
+
+        &-details{
+            margin-bottom: 0.5em;
+        }
+
+    }
+
+    h2{
+        padding: 0 5% 0 5%;
+    }
+    .languages{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 20px;
+    }
+
+    // page contact
+
+    .headerContact{
+        width: 100%;
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5% 10% 5% 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-color: #eaeaea; 
+
+
+        div{
+            
+            margin-left: 5%;
+            justify-self: flex-end;
+        }
+
+        i{
+            color: #7e7e7e;
+
+        }
+    }
+
+    .couvertHiddenContact{
+
+        height: 20px;
+        width: 100%;
+        margin: 5%;
+
+    }
+
+    .contact{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 20px;
+    }
+
+
+    // page impressum
+
+    .headerImpressum{
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5% 10% 5% 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-color: #eaeaea;
+
+
+        &-title{
+            font-size: 1em;
+        }
+
+        div{
+            
+            margin-left: 5%;
+            justify-self: flex-end;
+        }
+
+        i{
+            color: #7e7e7e;
+
+        }
+    }
+
+    .couvertHiddenImpressum{
+
+        height: 25px;
+        width: 100%;
+        margin: 5%;
+
+    }
+
+    .impressum{
+        margin: 4% 4% 4% 4%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 20px;
+    }
+
+}

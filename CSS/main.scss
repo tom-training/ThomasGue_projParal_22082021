@@ -1748,3 +1748,899 @@
         }
     }  
 }
+
+
+@media (min-width: 991.99px) {
+
+    body{
+        font-family: Roboto, Courier, monospace, Arial;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    $primaryColor: black;
+    $secondaryColor: darkgray;
+    $thirdColor: #9356dc;
+    $fourthColor: #721cad;
+
+    
+
+
+    /* keyframes 1/4 used in the DIV launcher for the disappeance of the load progress bar */
+    @keyframes disparition{
+        0%{
+            opacity: 1;
+        }
+    
+        100%{
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+
+    /* keyframes 2/4 used in the DIV mainContainer for the apparition of the index page */
+    @keyframes apparition{
+        0%{
+            opacity: 0;
+        }
+
+        25%{
+            opacity: 0.25;
+        }
+
+        50%{
+            opacity: .5;
+        }
+    
+        75%{
+            opacity: .75;
+        }
+        100%{
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+
+    /* keyframes 3/4 used in the launcher-titre__un and launcher-titre__deux */
+    @keyframes titel {
+        0%{
+            transform: scaleX(0);
+            opacity: 0;
+        }
+        
+        100%{
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+    
+    /* keyframes 4/4 used in the launcher-progressBar__grey and launcher-progressBar__orange */
+    @keyframes barDeProgressionOrange{
+
+        0%{
+            transform: scaleX(0);
+            opacity: 0;
+        }
+
+        100%{
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes barDeProgressionGrey{
+
+        0%{
+            opacity: 1;
+        }
+
+        100%{
+            opacity: 0.5;
+        }
+    }
+
+
+    .launcher{
+        width: 100%;
+
+        /* A REACTIVER WHEN FINISHED 
+        display: flex; */
+        
+        /* A EFFACER */ 
+        display: none;   
+
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+            
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        
+        animation: disparition 3000ms 2500ms;
+        animation-fill-mode: forwards;
+
+        &-titre{
+            margin-bottom: 3%;
+            font-weight: bold;
+            font-size: 1.2em;
+            display: flex;
+
+            &__un{
+                color: $primaryColor;
+                margin-right: 3%;
+                transform-origin: 0% 50%;
+                animation: titel 500ms;
+                animation-fill-mode: backwards;
+            }
+
+            &__deux{
+                color: $primaryColor;
+                transform-origin: 0% 50%;
+                animation: titel 500ms 500ms;
+                animation-fill-mode: backwards;
+            }
+        }
+
+        &-progressBar{
+            position: relative;
+            margin-bottom: 3%;
+            width: 60%;
+            height: 2px;
+            
+
+            &__grey{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                
+                border: 2px solid $secondaryColor;
+                background-color: $secondaryColor;
+                height: 100%;
+                width: 100%;
+                
+                animation: barDeProgressionGrey 1000ms;
+                animation-fill-mode: forwards;
+            }
+
+            &__orange{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                
+                border: 2px solid $thirdColor;
+                background-color: $thirdColor;
+                height: 100%;
+                width: 100%;
+                transform-origin: 0% 50%;
+                animation: barDeProgressionOrange 1000ms 1000ms;
+                animation-fill-mode: backwards;
+            }
+        }
+
+        &-countdown{
+            color: $primaryColor;
+            font-weight: lighter;
+        }
+    }
+
+    /* Retour au CSS de la page index */
+ 
+    
+    #mainContainer{
+        //max-width: 950px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+
+        /* A REACTIVER WHEN FINISHED */
+        /*
+        animation: apparition 1000ms 5500ms;
+        animation-fill-mode: backwards; */
+     }
+
+    header{
+        width: 100%;
+        box-shadow: 0px 3px 2px #cfcfcf;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 20px;
+        background-color: whitesmoke;   
+
+        i{
+            color: #7e7e7e;
+        }
+
+        #lesPoints{
+            display: none;
+        }
+    }
+
+    main{
+        width: 100%;
+        display: grid;
+
+        grid-template-columns: 2fr 5fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    
+    @keyframes dotincrease{
+        0% {
+            transform: scale(0);
+            opacity: .1;
+        }
+        5% {
+            transform: scale(.18);
+        }
+        15% {
+            transform: scale(.4);
+        }
+        20% {
+            transform: scale(.81);
+        }
+        25%{
+            opacity: 1;
+        }
+        30% {
+            transform: scale(1);
+        }
+
+        35% {
+            transform: scale(0.81);
+            opacity: .1;
+        }
+        40% {
+            transform: scale(.61);
+        }
+        45% {
+            transform: scale(.4);
+        }
+        50% {
+            transform: scale(.18);
+        }
+        55% {
+            opacity: 1;
+        }
+        60% {
+            transform: scale(0);
+        }
+
+        70% {
+            transform: scale(0);
+            opacity: .1;
+        }
+        75% {
+            transform: scale(.18);
+        }
+        80% {
+            transform: scale(.4);
+        }
+        85% {
+            transform: scale(.81);
+        }
+        95%,100% {
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes barDeCompetenceOrange{
+
+        0%{
+            transform: scaleX(0);
+            opacity: 0;
+        }
+
+        100%{
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+
+    /* A FAIRE */
+    #noVisibleLeft{
+        opacity: 1;
+        display: block;
+        background-color: lightgrey;
+        
+        
+        position: fixed;
+        top: 81px;
+        bottom: 0;
+        right: 75%;
+        left: 0;
+        
+        
+        grid-column: 1;
+        grid-row: 1;
+        max-height: 100vh;
+        overflow-y: scroll;
+        
+        /*.couvert-hidden_noVisibleLeft{
+            height: 56px;
+            width: 100%;
+            margin: 5%;
+        }*/
+
+        .blanche{
+            background-color: whitesmoke;
+        }
+        
+        .rectangleHaut{
+            display: none;
+            /*
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 10%;
+            padding-top: 10%;
+            margin-bottom: 10%;
+
+            i{
+                color: #7e7e7e;
+            }
+            */
+        }
+
+        .cadreIdentite{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 5% 0 5% 0;
+        }
+
+        .cadrePhoto{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .myPix{
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+            }
+    
+            .blocRouge{
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: red;
+                box-shadow: 0 0 3px 3px darkgray;
+                animation: dotincrease 10000ms;   
+                z-index: 2;
+                position: absolute;
+                left: 56px;
+                top: 50px;
+            }   
+        }  
+        
+        .cadreTexte{
+            padding: 5% 10% 5% 10%;
+            width: 100%;
+            font-size: 0.8em;
+            text-align: center;
+            background-color: whitesmoke;
+
+            &-name{
+                font-weight: bold;
+            }
+
+            p{
+                margin-bottom: 5%;
+            }
+        }
+
+        .grise{
+            background-color: lightgray;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-y: scroll;
+            box-shadow: inset 0px 3px 5px darkgray;
+            height: 100%;
+            
+
+            .cadreInfo{
+                width: 100%;
+                padding: 5% 10% 5% 10%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8em;
+                
+                
+               li{
+                   margin-bottom: 10%;
+               }
+    
+                &-left{
+                    text-align: left;
+                    list-style: none;
+                    font-weight: bold;
+                }
+    
+                &-right{
+                    text-align: right;
+                    list-style: none;
+                }
+            }
+    
+            .trait{
+                width: 70%;
+                height: 2px;
+                background-color: darkgray;
+                border: none;
+            }
+    
+            .cadreLanguages{
+                width: 100%;
+                font-size: 0.6em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5% 0 5% 0;
+
+                div{
+                    margin-right: 5%;
+                    margin-left: 5%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                
+                &-francais{
+                    .cent{
+                        border: 2px solid $thirdColor;
+                    }
+                }
+
+                &-anglais{
+                    position: relative;  
+                    
+                    .quatrevingtquinze{
+                        border: 2px solid $thirdColor;
+                    }
+
+                    .incruste{
+                        border: 1px solid lightgray;
+                        background-color: lightgray;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 5px;
+                    }
+                }
+
+                &-allemand{
+                    .soixantequinze{
+                        border: 2px solid;
+                        border-top-color: $thirdColor;
+                        border-right-color: lightgray;
+                        border-bottom-color: $thirdColor;
+                        border-left-color: $thirdColor;
+                    }
+                }
+                
+                .cercle{
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10%;  
+                    animation: chargement 8s 2s ease;
+                    animation-fill-mode: forwards;
+                }
+
+                @keyframes chargement{
+
+                    from{
+                        opacity: 0;
+                    } 
+
+                    to{
+                        opacity: 1;
+                    }
+                }
+
+                .innerCercle{
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                } 
+            }
+
+            .cadreCompetences{
+                padding: 5% 0 5% 0;
+                font-size: 0.8em;
+
+                i{
+                    color: $fourthColor;
+                    font-size: 0.7em;
+                    margin-right: 1em;
+                }
+            }
+
+            .cadreCompIT{
+                width: 100%;
+                padding: 5% 15% 5% 15%;
+                font-size: 0.7em;
+
+                p{
+                    padding: 5% 0 1% 0;
+                }
+
+                @keyframes barLoad{
+                    0%{
+                        transform: scaleX(0);
+                        opacity: 0;
+                    }
+            
+                    100%{
+                        transform: scaleX(1);
+                        opacity: 1;
+                    }    
+                }
+
+
+                .barProg{
+                    position: relative;
+                    background-color: black;
+                    height: 0.2em;
+                    width: 100%;
+
+                    &__grey{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        
+                        
+                        background-color: #eaeaea;
+                        height: 3px;
+                        width: 100%;
+                        
+                    }
+
+                    &__orange{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        
+                        background-color: $thirdColor;
+                        height: 3px;
+                    } 
+
+                    
+                    .percentHigh{
+                        width: 90%;
+                        animation: barLoad 5000ms 500ms;
+                        animation-fill-mode: backwards;
+                        transform-origin: 0% 50%;
+                    } 
+
+                    .percentMedium{
+                        width: 75%;
+                        animation: barLoad 5000ms 500ms;
+                        animation-fill-mode: backwards;
+                        transform-origin: 0% 50%;
+                    } 
+                    
+                    .percentLow{
+                        width: 60%;
+                        animation: barLoad 5000ms 500ms;
+                        animation-fill-mode: backwards;
+                        transform-origin: 0% 50%;
+                    } 
+                    
+                }
+            }
+        }        
+    }
+    /* A FAIRE */
+
+    // DEBUT DE LA FENETRE DE DROITE
+
+    #noVisibleRight{
+
+        grid-column: 3;
+        grid-row: 1;
+
+        
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 87%;
+        display: block;
+        
+        
+        background-color: #eaeaea;
+        box-shadow: inset 3px 3px 3px lightgrey;
+        
+
+        .rectangleHautDroit{
+            
+            background-color: whitesmoke;
+            
+
+            //box-shadow: 0px 3px 2px #cfcfcf;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            
+            height: 126px;
+
+        }
+        .iconeCroix{
+            display: none;
+            color: #7e7e7e; 
+            height: 50%;
+            margin-left: 10%;
+        }
+
+        .cadreMenu{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 15%;
+            box-shadow: inset 0px 3px 2px #cfcfcf;
+
+            color: #7e7e7e;
+
+            a{
+                display: block;
+                margin-bottom: 30%;
+                color: #7e7e7e;
+            }
+        }
+    }
+
+    // FIN DU STYLE DE LA FENETRE DE DROITE 
+
+
+    /* C'EST PROPRE */
+    nav{
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        width: 150px;
+        height: 50px;
+
+        position: fixed;
+        top: 10px;
+        left: 30px;
+       
+
+        background-color: whitesmoke;
+
+        .flagSlot{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #eng{
+            grid-row: 1;
+            grid-column: 1;
+            border-right: 1px solid lightgray;
+        }
+
+        #ger{
+            grid-row: 1;
+            grid-column: 2;
+            border-right: 1px solid lightgray;
+        }
+
+        #fren{
+            grid-row: 1;
+            grid-column: 3;
+        }
+    }
+    /* C'EST PROPRE */
+
+    .couvert{
+        /* border: 1px solid red; */  
+        width: 100%;
+        grid-column: 2; 
+        grid-row: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        background-color: lightgray;
+
+        &-hidden{
+            height: 100px;
+            width: 100%;
+            margin: 5%;
+        }
+
+        &-photo{
+            width: 90%;
+            height: 215px;
+            background-color: rgb(18,18,18);
+            background-image: url("images/berlin-skyline.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            box-shadow: inset 0px 0px 10px 10px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 15px;
+
+            p{
+                color: whitesmoke;
+                font-family: Poppins;
+                background: radial-gradient(rgb(32, 32, 32), black);
+                box-shadow: 0px 0px 5px 5px black;
+                margin-bottom: 5%;
+                font-size: 0.6em;
+            }
+
+            .bouton{
+                background-color: $thirdColor;
+                color: white;
+                font-family: Poppins;
+                box-shadow: 0px 0px 5px 5px black;
+                margin-bottom: 5%;
+                padding: 0% 2% 0% 2%; 
+                font-size: 0.8em;  
+                border-radius: 20px;             
+            }
+        }
+
+        &-section{
+            margin: 5%;
+            width: 90%;
+            padding: 5%;
+            /* border: 1px solid brown; */
+
+            &__blanche{
+                background-color: whitesmoke;
+            }
+
+            &__grise{
+                background-color: lightgray;
+                
+            }
+
+        }
+
+        .lesChiffres{
+            display: grid;
+            grid-template-columns: 2;
+            grid-template-rows: 3;
+            padding: 0;
+            font-size: 0.8em;
+            gap: 20px;
+
+            span{
+                color: $fourthColor;
+                display: inline-block;
+                height: 100%;
+                padding-right: 3%; 
+            }
+
+            
+            @mixin agencementLesChiffres{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            
+
+            .countries{
+               grid-row: 1;
+               grid-column: 1;
+               @include agencementLesChiffres;
+            }
+
+            .languages{
+                grid-row: 2;
+                grid-column: 1;
+                @include agencementLesChiffres;
+            }
+
+            .typeCompanies{
+                grid-row: 1;
+                grid-column: 2;
+                @include agencementLesChiffres;
+            }
+
+            .workFields{
+                grid-row: 2;
+                grid-column: 2;
+                @include agencementLesChiffres;
+            }
+
+            .moreInfo{
+                grid-row: 3;
+                grid-column: 1/3;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+        }
+
+    }
+
+    footer{
+        background-color: lightgrey;
+        display: flex;
+        justify-content: center;
+
+
+        #cadreFooter{
+            background-color: whitesmoke;
+            /* border: 3px solid purple; */
+            width: 60%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 5%;
+            margin-left: 33%;
+        }
+
+        div{
+            margin-top: 2%;
+        }
+
+        .flaticonAttrib{
+            font-size: 0.5em;
+        }
+    }
+}
