@@ -214,6 +214,7 @@
 
         #cadreFooter{
             background-color: whitesmoke;
+            //background-color: rgba(245, 245, 245, 0.473);
             width: 90%;
             
             display: flex;
@@ -225,6 +226,7 @@
             margin-bottom: 5%;
 
             padding: 0 0 3% 3%;
+            border-radius: 5px;
         }
 
         div{
@@ -366,6 +368,17 @@
         border-radius: 20px;
     }
 
+    #footerContact{
+
+        background-color: #eaeaea;
+
+        #cadreFooter{
+            
+            background-color: rgba(245, 245, 245, 0.473);
+        }
+
+    }
+
 
     // page impressum
 
@@ -414,6 +427,17 @@
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
+    }
+
+    #footerImpressum{
+
+        background-color: #eaeaea;
+
+        #cadreFooter{
+            
+            background-color: rgba(245, 245, 245, 0.473);
+        }
+
     }
 }
 
@@ -775,6 +799,16 @@
         border-radius: 20px;
     }
 
+    #footerContact{
+
+        background-color: #eaeaea;
+
+        #cadreFooter{
+            
+            background-color: rgba(245, 245, 245, 0.473);
+        }
+
+    }
 
     // page impressum
 
@@ -823,6 +857,17 @@
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
+    }
+
+    #footerImpressum{
+
+        background-color: #eaeaea;
+
+        #cadreFooter{
+            
+            background-color: rgba(245, 245, 245, 0.473);
+        }
+
     }
 }
 

@@ -163,6 +163,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 0 0 3% 3%;
+    border-radius: 5px;
   }
   footer div {
     margin-top: 2%;
@@ -274,6 +275,13 @@
     border-radius: 20px;
   }
 
+  #footerContact {
+    background-color: #eaeaea;
+  }
+  #footerContact #cadreFooter {
+    background-color: rgba(245, 245, 245, 0.473);
+  }
+
   .headerImpressum {
     width: 100%;
     display: flex;
@@ -310,6 +318,13 @@
     background-color: white;
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
+  }
+
+  #footerImpressum {
+    background-color: #eaeaea;
+  }
+  #footerImpressum #cadreFooter {
+    background-color: rgba(245, 245, 245, 0.473);
   }
 }
 @media (min-width: 575.99px) and (max-width: 991.98px) {
@@ -585,6 +600,13 @@
     border-radius: 20px;
   }
 
+  #footerContact {
+    background-color: #eaeaea;
+  }
+  #footerContact #cadreFooter {
+    background-color: rgba(245, 245, 245, 0.473);
+  }
+
   .headerImpressum {
     width: 100%;
     display: flex;
@@ -621,6 +643,13 @@
     background-color: white;
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
+  }
+
+  #footerImpressum {
+    background-color: #eaeaea;
+  }
+  #footerImpressum #cadreFooter {
+    background-color: rgba(245, 245, 245, 0.473);
   }
 }
 @media (min-width: 991.99px) {
