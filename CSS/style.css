@@ -1610,6 +1610,9 @@
   header #lesPoints {
     display: none;
   }
+  header .fa-bars {
+    display: none;
+  }
 
   main {
     width: 100%;
@@ -1687,7 +1690,6 @@
       opacity: 1;
     }
   }
-  /* A FAIRE */
   #noVisibleLeft {
     opacity: 1;
     display: block;
@@ -1944,7 +1946,6 @@
     transform-origin: 0% 50%;
   }
 
-  /* A FAIRE */
   #noVisibleRight {
     grid-column: 3;
     grid-row: 1;
@@ -1969,6 +1970,7 @@
     color: #7e7e7e;
     height: 50%;
     margin-left: 10%;
+    display: none;
   }
   #noVisibleRight .cadreMenu {
     display: flex;

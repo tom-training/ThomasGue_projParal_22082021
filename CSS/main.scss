@@ -1973,6 +1973,10 @@
         #lesPoints{
             display: none;
         }
+
+        .fa-bars{
+            display: none;
+        }
     }
 
     main{
@@ -2059,7 +2063,7 @@
         }
     }
 
-    /* A FAIRE */
+   
     #noVisibleLeft{
         opacity: 1;
         display: block;
@@ -2373,7 +2377,7 @@
             }
         }        
     }
-    /* A FAIRE */
+    
 
     // DEBUT DE LA FENETRE DE DROITE
 
@@ -2414,6 +2418,7 @@
             color: #7e7e7e; 
             height: 50%;
             margin-left: 10%;
+            display: none;
         }
 
         .cadreMenu{

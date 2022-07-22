@@ -12,30 +12,34 @@
     <title>tgcv</title>
 
     <script type="text/javascript">
-    
-        function clickClose(){
+
+        if(window.matchMedia("(max-width: 991.98px)").matches){
+
+            function clickClose(){
                
-            document.getElementById("noVisibleLeft").style.display = "none";
-
-            document.getElementById("noVisibleLeft").style.opacity = "0";
-        }
-
-        function clickOpen(){
-            document.getElementById("noVisibleLeft").style.display = "block";
-            document.getElementById("noVisibleLeft").style.opacity = "1";
-        }
-
-        function clickOpenRight(){
-            document.getElementById("noVisibleRight").style.display = "block";
-            document.getElementById("noVisibleRight").style.opacity = "1";
-        }
-
-        function clickCloseRight(){
-               
-               document.getElementById("noVisibleRight").style.display = "none";
+               document.getElementById("noVisibleLeft").style.display = "none";
    
-               document.getElementById("noVisibleRight").style.opacity = "0";
-        }
+               document.getElementById("noVisibleLeft").style.opacity = "0";
+           }
+   
+           function clickOpen(){
+               document.getElementById("noVisibleLeft").style.display = "block";
+               document.getElementById("noVisibleLeft").style.opacity = "1";
+           }
+   
+           function clickOpenRight(){
+               document.getElementById("noVisibleRight").style.display = "block";
+               document.getElementById("noVisibleRight").style.opacity = "1";
+           }
+   
+           function clickCloseRight(){
+                  
+                  document.getElementById("noVisibleRight").style.display = "none";
+      
+                  document.getElementById("noVisibleRight").style.opacity = "0";
+           }
+
+        } 
 
         /* fonction pour gérer l'animation du décompte jusqu'à 100 */
         var _counter = 1;
