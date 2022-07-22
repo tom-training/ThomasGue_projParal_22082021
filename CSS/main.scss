@@ -234,6 +234,7 @@
 
     main{
         width: 100%;
+        background-color: whitesmoke;
     }
 
     
@@ -1097,6 +1098,7 @@
         display: grid;
 
         grid-template-columns: 1fr 1fr 1fr;
+        background-color: whitesmoke;
     }
 
     
@@ -1953,6 +1955,10 @@
      }
 
     header{
+
+        display: none;
+
+        /*
         width: 100%;
         box-shadow: 0px 3px 2px #cfcfcf;
         display: flex;
@@ -1977,6 +1983,8 @@
         .fa-bars{
             display: none;
         }
+
+        */
     }
 
     main{
@@ -1985,6 +1993,7 @@
 
         grid-template-columns: 2fr 5fr 1fr;
         grid-template-rows: 1fr;
+        background-color: whitesmoke;
     }
 
     
@@ -2388,15 +2397,18 @@
 
         
         position: fixed;
-        top: 130px;
+        top: 0;
         bottom: 0;
         right: 0;
         left: 87%;
         display: block;
+        opacity: 1;
         
         
         background-color: #eaeaea;
         box-shadow: inset 3px 3px 3px lightgrey;
+
+
         
 
         .rectangleHautDroit{
@@ -2426,6 +2438,9 @@
             box-shadow: inset 0px 3px 2px #cfcfcf;
 
             color: #7e7e7e;
+
+            padding-top:30%;
+            
 
             a{
                 display: block;
@@ -2493,10 +2508,15 @@
         flex-wrap: nowrap;
         background-color: lightgray;
 
+        padding-top: 5%;
+
         &-hidden{
-            height: 100px;
+
+            display: none;
+            /*height: 100px;
             width: 100%;
             margin: 5%;
+            */
         }
 
         &-photo{

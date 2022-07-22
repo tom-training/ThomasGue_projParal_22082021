@@ -188,6 +188,7 @@
 
   main {
     width: 100%;
+    background-color: whitesmoke;
   }
 
   @keyframes dotincrease {
@@ -895,6 +896,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: whitesmoke;
   }
 
   @keyframes dotincrease {
@@ -1591,6 +1593,8 @@
   }
 
   header {
+    display: none;
+    /*
     width: 100%;
     box-shadow: 0px 3px 2px #cfcfcf;
     display: flex;
@@ -1602,16 +1606,21 @@
     left: 0;
     right: 0;
     height: 130px;
-    background-color: whitesmoke;
-  }
-  header i {
-    color: #7e7e7e;
-  }
-  header #lesPoints {
-    display: none;
-  }
-  header .fa-bars {
-    display: none;
+    background-color: whitesmoke;   
+
+    i{
+        color: #7e7e7e;
+    }
+
+    #lesPoints{
+        display: none;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+    */
   }
 
   main {
@@ -1619,6 +1628,7 @@
     display: grid;
     grid-template-columns: 2fr 5fr 1fr;
     grid-template-rows: 1fr;
+    background-color: whitesmoke;
   }
 
   @keyframes dotincrease {
@@ -1950,11 +1960,12 @@
     grid-column: 3;
     grid-row: 1;
     position: fixed;
-    top: 130px;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 87%;
     display: block;
+    opacity: 1;
     background-color: #eaeaea;
     box-shadow: inset 3px 3px 3px lightgrey;
   }
@@ -1978,6 +1989,7 @@
     padding-top: 15%;
     box-shadow: inset 0px 3px 2px #cfcfcf;
     color: #7e7e7e;
+    padding-top: 30%;
   }
   #noVisibleRight .cadreMenu a {
     display: block;
@@ -2029,11 +2041,14 @@
     align-items: center;
     flex-wrap: nowrap;
     background-color: lightgray;
+    padding-top: 5%;
   }
   .couvert-hidden {
-    height: 100px;
+    display: none;
+    /*height: 100px;
     width: 100%;
     margin: 5%;
+    */
   }
   .couvert-photo {
     width: 90%;
