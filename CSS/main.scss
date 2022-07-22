@@ -2388,7 +2388,7 @@
 
         
         position: fixed;
-        top: 0;
+        top: 130px;
         bottom: 0;
         right: 0;
         left: 87%;
@@ -2401,23 +2401,18 @@
 
         .rectangleHautDroit{
             
+            display: none;
+
+            /*
             background-color: whitesmoke;
-            
-
-            //box-shadow: 0px 3px 2px #cfcfcf;
-
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            */
             
-            height: 130px;
 
         }
         .iconeCroix{
-            display: none;
-            color: #7e7e7e; 
-            height: 50%;
-            margin-left: 10%;
             display: none;
         }
 

@@ -1950,7 +1950,7 @@
     grid-column: 3;
     grid-row: 1;
     position: fixed;
-    top: 0;
+    top: 130px;
     bottom: 0;
     right: 0;
     left: 87%;
@@ -1959,17 +1959,15 @@
     box-shadow: inset 3px 3px 3px lightgrey;
   }
   #noVisibleRight .rectangleHautDroit {
+    display: none;
+    /*
     background-color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 130px;
+    */
   }
   #noVisibleRight .iconeCroix {
-    display: none;
-    color: #7e7e7e;
-    height: 50%;
-    margin-left: 10%;
     display: none;
   }
   #noVisibleRight .cadreMenu {
