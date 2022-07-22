@@ -16,3 +16,7 @@ experience.scss rules the code of:
 
 main.scss rules the code of :
             index.html
+
+
+------------------------- Building tips ------------------------------  
+il faut que le header soit de 130 px = au noVisibleRight/rectangleHautDroit
