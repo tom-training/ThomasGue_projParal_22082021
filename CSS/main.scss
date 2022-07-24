@@ -2632,18 +2632,18 @@
 
     footer{
         background-color: lightgrey;
-        display: flex;
-        justify-content: center;
+        //display: flex;
+        //justify-content: flex-start;
 
 
         #cadreFooter{
-            background-color: whitesmoke;
+            //background-color: whitesmoke;
             /* border: 3px solid purple; */
             width: 60%;
             padding-left: 5%;
             padding-right: 5%;
-            padding-bottom: 5%;
-            margin-left: 33%;
+            padding-bottom: 65%;
+            margin-left: 25%;
         }
 
         div{

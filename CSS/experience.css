@@ -33,7 +33,7 @@
   }
 
   #noVisibleRight {
-    opacity: 0;
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -673,7 +673,7 @@
   }
 
   #mainContainer {
-    max-width: 950px;
+    max-width: 1950px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -684,7 +684,6 @@
   }
 
   #noVisibleRight {
-    opacity: 1;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -693,6 +692,7 @@
     display: block;
     background-color: #eaeaea;
     box-shadow: inset 3px 3px 3px lightgrey;
+    display: none;
   }
   #noVisibleRight .rectangleHautDroit {
     background-color: white;
@@ -761,6 +761,7 @@
     background-color: white;
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
+    width: 90%;
   }
   .job-title {
     font-size: 1.2em;
@@ -805,7 +806,6 @@
     margin-top: 10%;
   }
   footer #cadreFooter {
-    background-color: whitesmoke;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -813,7 +813,6 @@
     align-items: flex-start;
     margin-top: 25%;
     margin-bottom: 5%;
-    padding: 0 0 3% 3%;
   }
   footer div {
     margin-top: 2%;

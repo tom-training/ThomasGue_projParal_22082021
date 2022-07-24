@@ -49,7 +49,7 @@
 
     #noVisibleRight{
 
-        opacity: 0;
+        display: none;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -904,7 +904,7 @@
    
     // page experience et education
     #mainContainer{
-        max-width: 950px;
+        max-width: 1950px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -915,7 +915,7 @@
     }
 
     #noVisibleRight{
-        opacity: 1;
+        //opacity: 1;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -924,6 +924,7 @@
         display: block;
         background-color: #eaeaea;
         box-shadow: inset 3px 3px 3px lightgrey;
+        display: none;
 
         .rectangleHautDroit{
             
@@ -1018,6 +1019,7 @@
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
+        width: 90%;
 
         &-title{
             font-size: 1.2em;
@@ -1076,7 +1078,7 @@
 
 
         #cadreFooter{
-            background-color: whitesmoke;
+            //background-color: whitesmoke;
             width: 90%;
             
             display: flex;
@@ -1087,7 +1089,7 @@
             margin-top: 25%;
             margin-bottom: 5%;
 
-            padding: 0 0 3% 3%;
+            //padding: 0 0 3% 3%;
         }
 
         div{
