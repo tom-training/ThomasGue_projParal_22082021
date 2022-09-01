@@ -139,6 +139,7 @@
     // page experience et education
     main{
         width: 100%;
+        background-color: #eaeaea;
 
         ul{
             //list-style-type: none;
@@ -198,6 +199,11 @@
             color: $thirdColor;
             margin-top: 2px;
         }
+    }
+
+    .laPhoto{
+
+        display: none;
     }
 
    
@@ -441,6 +447,8 @@
     }
 }
 
+
+
 @media (min-width: 575.99px) and (max-width: 991.98px) {
 
     // page experience.html
@@ -572,6 +580,7 @@
     // page experience et education
     main{
         width: 100%;
+        background-color: #eaeaea;
 
         ul{
             //list-style-type: none;
@@ -633,6 +642,10 @@
         }
     }
 
+    .laPhoto{
+
+        display: none;
+    }
    
     // page experience et education
     footer{
@@ -871,6 +884,8 @@
     }
 }
 
+
+
 @media (min-width: 991.99px) {
 
     // page experience.html
@@ -904,7 +919,7 @@
    
     // page experience et education
     #mainContainer{
-        max-width: 1950px;
+        max-width: 2100px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -912,19 +927,30 @@
         width: 100%;
         position: relative;
         background-color: #eaeaea;
+
+        //border: 3px dotted gray;
+        //position: relative;
     }
 
     #noVisibleRight{
         //opacity: 1;
         position: fixed;
         top: 0;
-        bottom: 0;
+        //bottom: 0;
         right: 0;
-        left: 60%;
+        left: 50%;
+        height: 100px;
+        
         display: block;
         background-color: #eaeaea;
-        box-shadow: inset 3px 3px 3px lightgrey;
+
+        box-shadow: 3px 3px 4px darkgray;
+        //box-shadow: inset 3px 3px 3px 3px lightgrey;
+        
         display: none;
+        z-index: 1;
+
+        //border: 4px solid navy;
 
         .rectangleHautDroit{
             
@@ -933,31 +959,64 @@
 
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
             
             height: 40px;
 
         }
+
         .iconeCroix{
             color: #7e7e7e; 
             height: 50%;
-            margin-left: 10%;
+            margin-left: 3%;
+        }
+
+        .lesFlags{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 30%;
+        }
+
+        .flagSlot{
+            display: flex;
+            align-items: center;
+            padding: 7% 7% 7% 7%;
+        }
+
+        #eng{
+            
+            border-right: 1px solid lightgray;
+        }
+
+        #ger{
+            
+            border-right: 1px solid lightgray;
         }
 
         .cadreMenu{
 
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            margin-top: 15%;
-
             color: #7e7e7e;
+            height: 60%;
+            display: flex;
+            align-items: center;
+
+            &-section{
+
+                //border: 3px solid pink;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+            }
 
             a{
                 display: block;
-                margin-bottom: 30%;
+               
                 color: #7e7e7e;
+
+                //border: 2px solid yellow;
             }
         }
     }
@@ -965,10 +1024,11 @@
 
 
 
+
+
     // page experience 
     .headerExp{
         width: 100%;
-        
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -977,8 +1037,11 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 10%;
+        height: 150px;
         background-color: #eaeaea; 
+        z-index: 0;
+
+        //border: 2px dotted yellow;
         
         h1{
             font-size: 1.9em;
@@ -987,22 +1050,21 @@
         i{
             color: #7e7e7e;
         }
-        
+
 
     }
 
-    // page experience et education
-    .couvertHidden{
-
-        height: 55px;
-        width: 100%;
-        margin: 5%;
-
-    }
 
     // page experience et education
     main{
         width: 100%;
+
+        margin-top: 155px;
+
+        z-index: 1;
+        background-color: #eaeaea;
+
+        //border: 2px solid red;
 
         ul{
             //list-style-type: none;
@@ -1012,14 +1074,23 @@
         }
     }
 
+    .couvertHidden{
+        display: none;
+
+    }
+
     // page experience
     .job{
-        margin: 4% 4% 4% 4%;
+        margin: 0 2% 2% 2%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
-        width: 90%;
+        width: 45%;
+
+        
+
+        //border: 3px dashed orangered;
 
         &-title{
             font-size: 1.2em;
@@ -1065,31 +1136,63 @@
         }
     }
 
+
+    .laPhoto{
+
+        position: fixed;
+        top: 155px;
+        right: 2%;
+        z-index: 0;
+        width: 55%;
+
+        //border: 3px dotted blue;
+
+    }
+
+    .laPhotoTools{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        //: 3px solid blueviolet;
+    }
+ 
+    
+    .lesPix{
+
+        border-radius: 20px;
+        width: 80%;
+        object-fit: cover;
+
+        //border: 2px dotted purple;
+    }
+
+   
    
     // page experience et education
     footer{
+        margin-top: 3%;
         background-color: lightgrey;
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-top: 4%;
-        margin-top: 10%;
+        justify-content: flex-start;
+        align-items: center;
+        //margin-top: 10%;
 
+        z-index: 1;
 
 
         #cadreFooter{
-            //background-color: whitesmoke;
-            width: 90%;
+
+            background-color: lightgrey;
+            width: 100%;
             
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
 
-            margin-top: 25%;
-            margin-bottom: 5%;
-
-            //padding: 0 0 3% 3%;
+            padding: 0 0 3% 3%;
         }
 
         div{
@@ -1097,7 +1200,8 @@
         }
 
         .flaticonAttrib{
-            font-size: 0.5em;
+
+            font-size: 0.8em;
         }
 
     }
@@ -1115,9 +1219,9 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 40px;
-        background-color: #eaeaea;  
-
+        height: 150px;
+        background-color: #eaeaea; 
+        z-index: 0;
 
         div{
             
@@ -1132,6 +1236,8 @@
     }
 
     // page education
+
+    /*
     .couvertHiddenEducation{
 
         height: 55px;
@@ -1139,13 +1245,16 @@
         margin: 5%;
 
     }
+    */
 
     .formation{
-        margin: 4% 4% 4% 4%;
+       
+        margin: 0 2% 2% 2%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
+        width: 45%;
 
         &-title{
             font-size: 1.2em;
@@ -1176,15 +1285,51 @@
     }
 
     h2{
-        padding: 0 5% 0 5%;
+        padding: 0 5% 2% 5%;
     }
+
     .languages{
-        margin: 4% 4% 4% 4%;
+
+        margin: 0 2% 2% 2%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
+        width: 45%;
+
     }
+
+    .laPhotoEduc{
+
+        position: fixed;
+        top: 155px;
+        right: 2%;
+        z-index: 0;
+        width: 55%;
+
+        //border: 3px dotted blue;
+
+    }
+
+    .laPhotoEducation{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        //: 3px solid blueviolet;
+    }
+ 
+    
+    .lesPixEduc{
+
+        border-radius: 20px;
+        width: 80%;
+        object-fit: cover;
+
+        //border: 2px dotted purple;
+    }
+
 
     // page contact
 
