@@ -1751,6 +1751,7 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        
     }
 
     *{
@@ -1940,13 +1941,16 @@
  
     
     #mainContainer{
-        //max-width: 950px;
+        max-width: 1920px;
+        margin: auto;
+
         display: flex;
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
         position: relative;
+        
 
         /* A REACTIVER WHEN FINISHED */
         /*
@@ -2404,6 +2408,7 @@
         display: block;
         opacity: 1;
         
+        // media queries au delà de 1920 , on retire le fixed
         
         background-color: #eaeaea;
         box-shadow: inset 3px 3px 3px lightgrey;

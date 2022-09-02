@@ -54,7 +54,7 @@
         top: 0;
         bottom: 0;
         right: 0;
-        left: 60%;
+        left: 45%;
         display: block;
         
         background-color: #eaeaea;
@@ -69,15 +69,25 @@
 
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-around;
             
             height: 40px;
+
 
         }
         .iconeCroix{
             color: #7e7e7e; 
             height: 50%;
-            margin-left: 10%;
+            //margin-left: 10%;
+
+        }
+
+        .lesFlags{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            //margin-right: 5%;
+            width: 40%;
         }
 
         .cadreMenu{
@@ -344,6 +354,8 @@
         right: 0;
         height: 40px;
         background-color: #eaeaea; 
+        
+        
 
 
         div{
@@ -493,7 +505,7 @@
     }
 
     #noVisibleRight{
-        opacity: 0;
+        
         position: fixed;
         top: 0;
         bottom: 0;
@@ -502,6 +514,8 @@
         display: block;
         background-color: #eaeaea;
         box-shadow: inset 3px 3px 3px lightgrey;
+        display: none;
+        z-index: 1;
 
         .rectangleHautDroit{
             
@@ -510,15 +524,25 @@
 
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            
+            justify-content: space-around;
             height: 40px;
 
         }
         .iconeCroix{
             color: #7e7e7e; 
             height: 50%;
-            margin-left: 10%;
+        }
+
+        .lesFlags{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            border: 2px solid purple;
+        }
+
+        .flagSlot{
+            border: 2px dotted gray;
         }
 
         .cadreMenu{
@@ -556,6 +580,7 @@
         right: 0;
         height: 10%;
         background-color: #eaeaea; 
+        z-index: 0;
         
         h1{
             font-size: 1.9em;
@@ -565,22 +590,29 @@
             color: #7e7e7e;
         }
         
-
     }
 
     // page experience et education
     .couvertHidden{
 
+
+        display: none;
+        /*
         height: 55px;
         width: 100%;
         margin: 5%;
-
+        z-index: 0;
+       
+        */
     }
 
     // page experience et education
     main{
         width: 100%;
         background-color: #eaeaea;
+        //z-index: auto;
+
+        margin-top: 10%;
 
         ul{
             //list-style-type: none;
@@ -919,7 +951,9 @@
    
     // page experience et education
     #mainContainer{
-        max-width: 2100px;
+        max-width: 1920px;
+        margin: auto;
+        
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -933,7 +967,6 @@
     }
 
     #noVisibleRight{
-        //opacity: 1;
         position: fixed;
         top: 0;
         //bottom: 0;
@@ -941,7 +974,7 @@
         left: 50%;
         height: 100px;
         
-        display: block;
+        
         background-color: #eaeaea;
 
         box-shadow: 3px 3px 4px darkgray;
@@ -1060,8 +1093,6 @@
         width: 100%;
 
         margin-top: 155px;
-
-        z-index: 1;
         background-color: #eaeaea;
 
         //border: 2px solid red;
@@ -1237,15 +1268,17 @@
 
     // page education
 
-    /*
+    
     .couvertHiddenEducation{
 
+        display: none;
+        /*
         height: 55px;
         width: 100%;
         margin: 5%;
-
+        */
     }
-    */
+    
 
     .formation{
        
@@ -1335,7 +1368,6 @@
 
     .headerContact{
         width: 100%;
-       
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1344,9 +1376,9 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 40px;
+        height: 150px;
         background-color: #eaeaea; 
-
+        z-index: 0;
 
         div{
             
@@ -1356,25 +1388,62 @@
 
         i{
             color: #7e7e7e;
-
         }
     }
 
+    
     .couvertHiddenContact{
 
+        display: none;
+        /*
         height: 20px;
         width: 100%;
         margin: 5%;
-
+        */
     }
+    
 
     .contact{
-        margin: 4% 4% 4% 4%;
+        margin: 0 2% 2% 2%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
+        width: 45%;
     }
+
+    .laPhotoCom{
+
+        position: fixed;
+        top: 155px;
+        right: 2%;
+        z-index: 0;
+        width: 55%;
+
+        //border: 3px dotted blue;
+
+    }
+
+    .laPhotoContact{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        //: 3px solid blueviolet;
+    }
+ 
+    
+    .lesPixComm{
+
+        border-radius: 20px;
+        width: 80%;
+        max-height: 300px;
+        object-fit: cover;
+
+        //border: 2px dotted purple;
+    }
+
 
 
     // page impressum
