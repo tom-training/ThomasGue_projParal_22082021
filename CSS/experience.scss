@@ -1404,8 +1404,9 @@
         z-index: 0;
         width: 55%;
 
-        //border: 3px dotted blue;
+        margin-bottom: 5%;
 
+        //border: 3px dotted blue;
     }
 
     .laPhotoContact{
@@ -1422,7 +1423,7 @@
 
         border-radius: 20px;
         width: 80%;
-        max-height: 300px;
+        max-height: 250px;
         object-fit: cover;
 
         //border: 2px dotted purple;
@@ -1446,16 +1447,12 @@
         height: 40px;
         background-color: #eaeaea;
 
-
+        /*
         &-title{
             font-size: 1em;
         }
-
-        div{
-            
-            margin-left: 5%;
-            justify-self: flex-end;
-        }
+        */
+        
 
         i{
             color: #7e7e7e;
@@ -1464,15 +1461,16 @@
     }
 
     .couvertHiddenImpressum{
-
+        display: none;
+        /*
         height: 25px;
         width: 100%;
         margin: 5%;
-
+        */
     }
 
     .impressum{
-        margin: 4% 4% 4% 4%;
+        margin: 0 4% 0 4%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
