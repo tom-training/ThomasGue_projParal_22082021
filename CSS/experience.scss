@@ -1076,10 +1076,11 @@
     main{
         width: 100%;
 
-        margin-top: 155px;
+        margin-top: 175px;
         background-color: #eaeaea;
 
         //border: 2px solid red;
+        
 
         ul{
             //list-style-type: none;
@@ -1094,6 +1095,7 @@
 
     }
 
+
     // page experience
     .job{
         margin: 0 2% 2% 2%;
@@ -1102,8 +1104,6 @@
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
         width: 45%;
-
-        
 
         //border: 3px dashed orangered;
 
@@ -1155,7 +1155,7 @@
     .laPhoto{
 
         position: fixed;
-        top: 155px;
+        top: 175px;
         right: 2%;
         z-index: 0;
         width: 55%;
@@ -1516,12 +1516,15 @@
         max-width: 3920px;
         margin: auto;
         
-        display: flex;
+        
+        /*display: flex;
         justify-content: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: wrap; */
         width: 100%;
-        position: relative;
+        
+        
+        
         background-color: #eaeaea;
 
         //border: 3px dotted gray;
@@ -1533,35 +1536,25 @@
 
         margin-top: 155px;
         background-color: #eaeaea;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 29fr;
-
         //border: 2px solid red;
 
         ul{
             //list-style-type: none;
             margin-left: 1.5em;
             margin-bottom: 1em;
-            
         }
     }
 
     #noVisibleRight{
-        
-        grid-column: 1/3;
-        grid-row: 1;
-        
         background-color: #eaeaea;
 
         box-shadow: 3px 3px 4px darkgray;
         //box-shadow: inset 3px 3px 3px 3px lightgrey;
         
-        display: none;
+        //display: none;
         z-index: 1;
 
-        //border: 4px solid navy;
+        border: 4px solid navy;
 
         .rectangleHautDroit{
             
@@ -1572,7 +1565,7 @@
             align-items: center;
             justify-content: space-between;
             
-            height: 40px;
+            height: 240px;
 
         }
 
@@ -1633,10 +1626,6 @@
     }
 
 
-
-
-
-
     // page experience 
     .headerExp{
         width: 100%;
@@ -1663,27 +1652,6 @@
 
 
     // page experience et education
-
-
-    .experienceFrance{
-        grid-row: 2;
-        grid-column: 1/3;
-    }
-
-    .experienceCH{
-        grid-row: 2;
-        grid-column: 1/3;
-    }
-
-    .experienceUK{
-        grid-row: 2;
-        grid-column: 1/3;
-    }
-
-    .experienceTHAI{
-        grid-row: 2;
-        grid-column: 1/3;
-    }
 
     .couvertHidden{
         display: none;
@@ -1749,12 +1717,8 @@
 
 
     .laPhoto{
-
-        grid-column: 2;
-        grid-row: 2/5;
-
-        //border: 3px dotted blue;
-
+        border: 3px dotted blue;
+        width: 45%;
     }
 
     .laPhotoTools{
@@ -1763,20 +1727,18 @@
         flex-direction: column;
         align-items: center;
 
-        //: 3px solid blueviolet;
+        border: 3px solid blueviolet;
     }
  
     
     .lesPix{
 
         border-radius: 20px;
-        width: 80%;
+        width: 100%;
         object-fit: cover;
 
         //border: 2px dotted purple;
     }
-
-   
    
     // page experience et education
     footer{
