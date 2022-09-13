@@ -41,7 +41,7 @@
     left: 45%;
     background-color: #eaeaea;
     box-shadow: inset 3px 3px 3px lightgrey;
-    z-index: 1;
+    z-index: 2;
   }
   #noVisibleRight .rectangleHautDroit {
     background-color: white;
@@ -92,7 +92,7 @@
     right: 0;
     height: 10%;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerExp h1 {
     font-size: 1.9em;
@@ -100,13 +100,8 @@
   .headerExp i {
     color: #7e7e7e;
   }
-
-  .couvertHidden {
+  .headerExp #grandeResoIcon {
     display: none;
-    /*height: 40px;
-    width: 100%;
-    margin: 5%;
-    */
   }
 
   main {
@@ -117,6 +112,10 @@
   main ul {
     margin-left: 1.5em;
     margin-bottom: 1em;
+  }
+
+  .titleBigScreen {
+    display: none;
   }
 
   .job {
@@ -201,21 +200,13 @@
     right: 0;
     height: 8%;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerEducation h1 {
     font-size: 1.9em;
   }
   .headerEducation i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenEducation {
-    display: none;
-    /*height: 40px;
-    width: 100%;
-    margin: 5%;
-    */
   }
 
   .formation {
@@ -275,14 +266,10 @@
     right: 0;
     height: 10%;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerContact i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenContact {
-    display: none;
   }
 
   .contact {
@@ -316,18 +303,10 @@
     right: 0;
     height: 10%;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerImpressum i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenImpressum {
-    display: none;
-    /* height: 45px;
-    width: 100%;
-    margin: 5%;
-    */
   }
 
   .impressum {
@@ -386,7 +365,7 @@
     background-color: #eaeaea;
     box-shadow: inset 3px 3px 3px lightgrey;
     display: none;
-    z-index: 1;
+    z-index: 2;
   }
   #noVisibleRight .rectangleHautDroit {
     background-color: white;
@@ -436,7 +415,7 @@
     right: 0;
     height: 10%;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerExp h1 {
     font-size: 1.9em;
@@ -444,16 +423,8 @@
   .headerExp i {
     color: #7e7e7e;
   }
-
-  .couvertHidden {
+  .headerExp #grandeResoIcon {
     display: none;
-    /*
-    height: 55px;
-    width: 100%;
-    margin: 5%;
-    z-index: 0;
-
-    */
   }
 
   main {
@@ -464,6 +435,10 @@
   main ul {
     margin-left: 1.5em;
     margin-bottom: 1em;
+  }
+
+  .titleBigScreen {
+    display: none;
   }
 
   .job {
@@ -547,14 +522,10 @@
     right: 0;
     height: 10%;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerEducation i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenEducation {
-    display: none;
   }
 
   .formation {
@@ -614,19 +585,10 @@
     right: 0;
     height: 10%;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerContact i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenContact {
-    display: none;
-    /*
-    height: 20px;
-    width: 100%;
-    margin: 5%;
-    */
   }
 
   .contact {
@@ -662,18 +624,10 @@
     right: 0;
     height: 10%;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerImpressum i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenImpressum {
-    display: none;
-    /*height: 25px;
-    width: 100%;
-    margin: 5%;
-    */
   }
 
   .impressum {
@@ -732,7 +686,7 @@
     background-color: #eaeaea;
     box-shadow: 3px 3px 4px darkgray;
     display: none;
-    z-index: 1;
+    z-index: 2;
   }
   #noVisibleRight .rectangleHautDroit {
     background-color: white;
@@ -793,13 +747,16 @@
     right: 0;
     height: 150px;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerExp h1 {
     font-size: 1.9em;
   }
   .headerExp i {
     color: #7e7e7e;
+  }
+  .headerExp #grandeResoIcon {
+    display: none;
   }
 
   main {
@@ -812,7 +769,7 @@
     margin-bottom: 1em;
   }
 
-  .couvertHidden {
+  .titleBigScreen {
     display: none;
   }
 
@@ -863,7 +820,7 @@
     top: 175px;
     right: 2%;
     z-index: 0;
-    width: 55%;
+    width: 47%;
   }
 
   .laPhotoTools {
@@ -874,20 +831,19 @@
 
   .lesPix {
     border-radius: 20px;
-    width: 80%;
+    width: 100%;
     object-fit: cover;
   }
 
   footer {
     margin-top: 3%;
-    background-color: lightgrey;
+    background: linear-gradient(lightgrey, #eaeaea);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     z-index: 1;
   }
   footer #cadreFooter {
-    background-color: lightgrey;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -914,7 +870,7 @@
     right: 0;
     height: 150px;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerEducation div {
     margin-left: 5%;
@@ -922,15 +878,6 @@
   }
   .headerEducation i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenEducation {
-    display: none;
-    /*
-    height: 55px;
-    width: 100%;
-    margin: 5%;
-    */
   }
 
   .formation {
@@ -978,7 +925,7 @@
 
   .laPhotoEduc {
     position: fixed;
-    top: 155px;
+    top: 175px;
     right: 2%;
     z-index: 0;
     width: 55%;
@@ -1008,7 +955,7 @@
     right: 0;
     height: 150px;
     background-color: #eaeaea;
-    z-index: 0;
+    z-index: 1;
   }
   .headerContact div {
     margin-left: 5%;
@@ -1018,44 +965,52 @@
     color: #7e7e7e;
   }
 
-  .couvertHiddenContact {
-    display: none;
-    /*
-    height: 20px;
-    width: 100%;
-    margin: 5%;
-    */
+  #mainContact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 450px 450px;
+    height: 450px;
+  }
+
+  .contactSection {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .contact {
-    margin: 0 2% 2% 2%;
     padding: 4% 4% 4% 4%;
     background-color: white;
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
-    width: 45%;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .laPhotoCom {
-    position: fixed;
-    top: 155px;
-    right: 2%;
+    grid-column: 2;
     z-index: 0;
-    width: 55%;
-    margin-bottom: 5%;
   }
 
   .laPhotoContact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80%;
   }
 
   .lesPixComm {
     border-radius: 20px;
+    height: 100%;
     width: 80%;
-    max-height: 250px;
     object-fit: cover;
+  }
+
+  #footerContact {
+    background: linear-gradient(lightgrey, #eaeaea);
   }
 
   .headerImpressum {
@@ -1070,6 +1025,7 @@
     right: 0;
     height: 40px;
     background-color: #eaeaea;
+    z-index: 1;
     /*
     &-title{
         font-size: 1em;
@@ -1078,15 +1034,6 @@
   }
   .headerImpressum i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenImpressum {
-    display: none;
-    /*
-    height: 25px;
-    width: 100%;
-    margin: 5%;
-    */
   }
 
   .impressum {
@@ -1121,18 +1068,20 @@
   #mainContainer {
     max-width: 3920px;
     margin: auto;
-    /*display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap; */
     width: 100%;
     background-color: #eaeaea;
   }
 
   main {
     width: 100%;
-    margin-top: 155px;
     background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 2fr 2fr;
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    */
   }
   main ul {
     margin-left: 1.5em;
@@ -1141,22 +1090,26 @@
 
   #noVisibleRight {
     background-color: #eaeaea;
-    box-shadow: 3px 3px 4px darkgray;
-    z-index: 1;
-    border: 4px solid navy;
+    margin: 20px 20px 20px 20px;
+    grid-column: 3;
+    grid-row: 1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
   }
   #noVisibleRight .rectangleHautDroit {
     background-color: white;
     box-shadow: 0px 3px 2px #cfcfcf;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 240px;
+    justify-content: flex-end;
+    border-radius: 20px;
+    width: 85%;
   }
   #noVisibleRight .iconeCroix {
-    color: #7e7e7e;
-    height: 50%;
-    margin-left: 3%;
+    display: none;
   }
   #noVisibleRight .lesFlags {
     display: flex;
@@ -1179,16 +1132,19 @@
     color: #7e7e7e;
     height: 60%;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   #noVisibleRight .cadreMenu-section {
-    width: 100%;
+    width: 30%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
   #noVisibleRight .cadreMenu a {
     display: block;
+    font-size: 1.5em;
+    margin: 20% 0 20% 0;
     color: #7e7e7e;
   }
 
@@ -1208,18 +1164,16 @@
   .headerExp i {
     color: #7e7e7e;
   }
-
-  .couvertHidden {
+  .headerExp #petiteResoIcon {
     display: none;
   }
 
   .job {
-    margin: 0 2% 2% 2%;
+    margin: 0 2% 5% 2%;
     padding: 4% 4% 4% 4%;
     background-color: white;
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
-    width: 45%;
   }
   .job-title {
     font-size: 1.2em;
@@ -1255,16 +1209,49 @@
     margin-top: 2px;
   }
 
+  .titleBigScreen {
+    color: #9356dc;
+    margin: 0 2% 5% 2%;
+    padding: 4% 4% 4% 4%;
+    background-color: #e8e5e5;
+    box-shadow: 3px 3px 4px darkgray;
+    border-radius: 20px;
+  }
+
+  .experienceFrance {
+    grid-column: 1;
+    grid-row: 1/4;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .experienceCH {
+    grid-column: 2;
+    grid-row: 2/4;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .experienceUK {
+    grid-column: 3;
+    grid-row: 2;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .experienceTHAI {
+    grid-column: 3;
+    grid-row: 3;
+    padding: 20px 20px 20px 20px;
+  }
+
   .laPhoto {
-    border: 3px dotted blue;
-    width: 45%;
+    padding: 20px 20px 20px 20px;
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .laPhotoTools {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid blueviolet;
   }
 
   .lesPix {
@@ -1275,14 +1262,13 @@
 
   footer {
     margin-top: 3%;
-    background-color: lightgrey;
+    background: linear-gradient(lightgrey, #eaeaea);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     z-index: 1;
   }
   footer #cadreFooter {
-    background-color: lightgrey;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1317,15 +1303,6 @@
   }
   .headerEducation i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenEducation {
-    display: none;
-    /*
-    height: 55px;
-    width: 100%;
-    margin: 5%;
-    */
   }
 
   .formation {
@@ -1413,15 +1390,6 @@
     color: #7e7e7e;
   }
 
-  .couvertHiddenContact {
-    display: none;
-    /*
-    height: 20px;
-    width: 100%;
-    margin: 5%;
-    */
-  }
-
   .contact {
     margin: 0 2% 2% 2%;
     padding: 4% 4% 4% 4%;
@@ -1473,15 +1441,6 @@
   }
   .headerImpressum i {
     color: #7e7e7e;
-  }
-
-  .couvertHiddenImpressum {
-    display: none;
-    /*
-    height: 25px;
-    width: 100%;
-    margin: 5%;
-    */
   }
 
   .impressum {

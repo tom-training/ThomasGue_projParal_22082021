@@ -59,7 +59,7 @@
                 
         background-color: #eaeaea;
         box-shadow: inset 3px 3px 3px lightgrey;
-        z-index: 1;
+        z-index: 2;
         
 
         .rectangleHautDroit{
@@ -130,7 +130,7 @@
         height: 10%;
         
         background-color: #eaeaea; 
-        z-index: 0;
+        z-index: 1;
         
         h1{
             font-size: 1.9em;
@@ -140,19 +140,13 @@
             color: #7e7e7e;
         }
         
-
+        #grandeResoIcon{
+            display: none;
+        }
     }
 
     // page experience et education
-    .couvertHidden{
 
-        display: none;
-        /*height: 40px;
-        width: 100%;
-        margin: 5%;
-        */
-
-    }
 
     // page experience et education
     main{
@@ -169,6 +163,11 @@
     }
 
     // page experience
+
+    .titleBigScreen{
+        display: none;
+    }
+
     .job{
         margin: 4% 4% 4% 4%;
         padding: 4% 4% 4% 4%;
@@ -278,7 +277,7 @@
         right: 0;
         height: 8%;
         background-color: #eaeaea; 
-        z-index: 0;
+        z-index: 1;
 
         h1{
             font-size: 1.9em;
@@ -290,15 +289,6 @@
     }
 
     // page education
-    .couvertHiddenEducation{
-        
-        display: none;
-        /*height: 40px;
-        width: 100%;
-        margin: 5%;
-        */
-        
-    }
 
     .formation{
         margin: 4% 4% 4% 4%;
@@ -365,7 +355,7 @@
         right: 0;
         height: 10%;
         background-color: #eaeaea; 
-        z-index: 0;
+        z-index: 1;
         
 
         i{
@@ -374,11 +364,7 @@
         }
     }
 
-    .couvertHiddenContact{
 
-        display: none;
-
-    }
 
     .contact{
         margin: 4% 4% 4% 4%;
@@ -418,7 +404,7 @@
         right: 0;
         height: 10%;
         background-color: #eaeaea;
-        z-index: 0;
+        z-index: 1;
         
         
         i{
@@ -427,14 +413,6 @@
         }
     }
 
-    .couvertHiddenImpressum{
-
-        display: none;
-        /* height: 45px;
-        width: 100%;
-        margin: 5%;
-        */
-    }
 
     .impressum{
 
@@ -514,7 +492,7 @@
         background-color: #eaeaea;
         box-shadow: inset 3px 3px 3px lightgrey;
         display: none;
-        z-index: 1;
+        z-index: 2;
 
         .rectangleHautDroit{
             
@@ -581,7 +559,7 @@
         right: 0;
         height: 10%;
         background-color: #eaeaea; 
-        z-index: 0;
+        z-index: 1;
         
         h1{
             font-size: 1.9em;
@@ -591,21 +569,13 @@
             color: #7e7e7e;
         }
         
+        #grandeResoIcon{
+            display: none;
+        }
     }
 
     // page experience et education
-    .couvertHidden{
 
-
-        display: none;
-        /*
-        height: 55px;
-        width: 100%;
-        margin: 5%;
-        z-index: 0;
-       
-        */
-    }
 
     // page experience et education
     main{
@@ -623,6 +593,11 @@
     }
 
     // page experience
+
+    .titleBigScreen{
+        display: none;
+    }
+
     .job{
         margin: 4% 4% 4% 4%;
         padding: 4% 4% 4% 4%;
@@ -728,7 +703,7 @@
         right: 0;
         height: 10%;
         background-color: #eaeaea;  
-        z-index: 0;
+        z-index: 1;
       
 
         i{
@@ -737,9 +712,7 @@
     }
 
     // page education
-    .couvertHiddenEducation{
-        display: none;
-    }
+
 
     .formation{
         margin: 4% 4% 4% 4%;
@@ -779,6 +752,7 @@
     h2{
         padding: 0 5% 0 5%;
     }
+
     .languages{
         margin: 4% 4% 4% 4%;
         padding: 4% 4% 4% 4%;
@@ -805,21 +779,14 @@
         right: 0;
         height: 10%;
         background-color: #eaeaea; 
-        z-index: 0;
+        z-index: 1;
 
         i{
             color: #7e7e7e;
         }
     }
 
-    .couvertHiddenContact{
-        display: none;
-        /*
-        height: 20px;
-        width: 100%;
-        margin: 5%;
-        */
-    }
+
 
     .contact{
         margin: 4% 4% 4% 4%;
@@ -861,7 +828,7 @@
         right: 0;
         height: 10%;
         background-color: #eaeaea;
-        z-index: 0;
+        z-index: 1;
         
       
         i{
@@ -870,14 +837,7 @@
         }
     }
 
-    .couvertHiddenImpressum{
 
-        display: none;
-        /*height: 25px;
-        width: 100%;
-        margin: 5%;
-        */
-    }
 
     .impressum{
         margin: 4% 4% 4% 4%;
@@ -953,7 +913,6 @@
     #noVisibleRight{
         position: fixed;
         top: 0;
-        //bottom: 0;
         right: 0;
         left: 50%;
         height: 100px;
@@ -965,7 +924,7 @@
         //box-shadow: inset 3px 3px 3px 3px lightgrey;
         
         display: none;
-        z-index: 1;
+        z-index: 2;
 
         //border: 4px solid navy;
 
@@ -1039,10 +998,6 @@
     }
 
 
-
-
-
-
     // page experience 
     .headerExp{
         width: 100%;
@@ -1056,7 +1011,7 @@
         right: 0;
         height: 150px;
         background-color: #eaeaea; 
-        z-index: 0;
+        z-index: 1;
 
         //border: 2px dotted yellow;
         
@@ -1068,6 +1023,9 @@
             color: #7e7e7e;
         }
 
+        #grandeResoIcon{
+            display: none;
+        }
 
     }
 
@@ -1090,11 +1048,9 @@
         }
     }
 
-    .couvertHidden{
+    .titleBigScreen{
         display: none;
-
     }
-
 
     // page experience
     .job{
@@ -1158,7 +1114,7 @@
         top: 175px;
         right: 2%;
         z-index: 0;
-        width: 55%;
+        width: 47%;
 
         //border: 3px dotted blue;
 
@@ -1177,7 +1133,7 @@
     .lesPix{
 
         border-radius: 20px;
-        width: 80%;
+        width: 100%;
         object-fit: cover;
 
         //border: 2px dotted purple;
@@ -1188,7 +1144,8 @@
     // page experience et education
     footer{
         margin-top: 3%;
-        background-color: lightgrey;
+        //background-color: lightgrey;
+        background: linear-gradient(lightgrey, #eaeaea);
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -1199,7 +1156,7 @@
 
         #cadreFooter{
 
-            background-color: lightgrey;
+            //background-color: lightgrey;
             width: 100%;
             
             display: flex;
@@ -1236,7 +1193,7 @@
         right: 0;
         height: 150px;
         background-color: #eaeaea; 
-        z-index: 0;
+        z-index: 1;
 
         div{
             
@@ -1251,17 +1208,6 @@
     }
 
     // page education
-
-    
-    .couvertHiddenEducation{
-
-        display: none;
-        /*
-        height: 55px;
-        width: 100%;
-        margin: 5%;
-        */
-    }
     
 
     .formation{
@@ -1319,7 +1265,7 @@
     .laPhotoEduc{
 
         position: fixed;
-        top: 155px;
+        top: 175px;
         right: 2%;
         z-index: 0;
         width: 55%;
@@ -1362,7 +1308,7 @@
         right: 0;
         height: 150px;
         background-color: #eaeaea; 
-        z-index: 0;
+        z-index: 1;
 
         div{
             
@@ -1374,39 +1320,38 @@
             color: #7e7e7e;
         }
     }
-
     
-    .couvertHiddenContact{
-
-        display: none;
-        /*
-        height: 20px;
-        width: 100%;
-        margin: 5%;
-        */
+    #mainContact{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 450px 450px;
+        height: 450px;
     }
-    
+
+    .contactSection{
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+    }
 
     .contact{
-        margin: 0 2% 2% 2%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
-        width: 45%;
+        height: 80%;
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    .laPhotoCom{
-
-        position: fixed;
-        top: 155px;
-        right: 2%;
+    .laPhotoCom{ 
+        
+        grid-column: 2;
         z-index: 0;
-        width: 55%;
 
-        margin-bottom: 5%;
-
-        //border: 3px dotted blue;
     }
 
     .laPhotoContact{
@@ -1414,22 +1359,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        //: 3px solid blueviolet;
+        height: 80%;
     }
  
     
     .lesPixComm{
 
         border-radius: 20px;
+        height: 100%;
         width: 80%;
-        max-height: 250px;
         object-fit: cover;
-
-        //border: 2px dotted purple;
     }
 
+    #footerContact{
 
+        background: linear-gradient(lightgrey, #eaeaea);
+    }
 
     // page impressum
 
@@ -1447,6 +1392,7 @@
         height: 40px;
         background-color: #eaeaea;
 
+        z-index: 1;
         /*
         &-title{
             font-size: 1em;
@@ -1460,14 +1406,6 @@
         }
     }
 
-    .couvertHiddenImpressum{
-        display: none;
-        /*
-        height: 25px;
-        width: 100%;
-        margin: 5%;
-        */
-    }
 
     .impressum{
         margin: 0 4% 0 4%;
@@ -1515,16 +1453,7 @@
     #mainContainer{
         max-width: 3920px;
         margin: auto;
-        
-        
-        /*display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap; */
-        width: 100%;
-        
-        
-        
+        width: 100%;        
         background-color: #eaeaea;
 
         //border: 3px dotted gray;
@@ -1533,10 +1462,19 @@
 
     main{
         width: 100%;
-
-        margin-top: 155px;
         background-color: #eaeaea;
         //border: 2px solid red;
+
+        
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 1fr 2fr 2fr;
+        
+        /*
+        display: flex;
+        flex-wrap: wrap;
+        */
+        
 
         ul{
             //list-style-type: none;
@@ -1548,13 +1486,22 @@
     #noVisibleRight{
         background-color: #eaeaea;
 
-        box-shadow: 3px 3px 4px darkgray;
+        //box-shadow: 3px 3px 4px darkgray;
         //box-shadow: inset 3px 3px 3px 3px lightgrey;
         
         //display: none;
-        z-index: 1;
+        //z-index: 1;
+        margin: 20px 20px 20px 20px;
+        grid-column: 3;
+        grid-row: 1;
+        border-radius: 20px;
 
-        border: 4px solid navy;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        opacity: 1;
+        
 
         .rectangleHautDroit{
             
@@ -1563,16 +1510,14 @@
 
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            
-            height: 240px;
+            justify-content: flex-end;
+            border-radius: 20px;
+            width: 85%;
 
         }
 
         .iconeCroix{
-            color: #7e7e7e; 
-            height: 50%;
-            margin-left: 3%;
+            display: none;
         }
 
         .lesFlags{
@@ -1603,21 +1548,23 @@
             color: #7e7e7e;
             height: 60%;
             display: flex;
+            justify-content: center;
             align-items: center;
 
             &-section{
 
                 //border: 3px solid pink;
-                width: 100%;
+                width: 30%;
                 display: flex;
-                justify-content: space-around;
-                align-items: center;
+                flex-direction: column;
+                align-items: flex-start;
 
             }
 
             a{
                 display: block;
-               
+                font-size: 1.5em;
+                margin: 20% 0 20% 0;
                 color: #7e7e7e;
 
                 //border: 2px solid yellow;
@@ -1647,25 +1594,24 @@
             color: #7e7e7e;
         }
 
+        #petiteResoIcon{
+            display: none;
+        }
+
 
     }
 
 
     // page experience et education
 
-    .couvertHidden{
-        display: none;
-
-    }
-
     // page experience
     .job{
-        margin: 0 2% 2% 2%;
+        margin: 0 2% 5% 2%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
         border-radius: 20px;
-        width: 45%;
+        
 
         
 
@@ -1715,10 +1661,60 @@
         }
     }
 
+    .titleBigScreen{
+        color: $thirdColor;
+        margin: 0 2% 5% 2%;
+        padding: 4% 4% 4% 4%;
+        background-color: #e8e5e5;
+        box-shadow: 3px 3px 4px darkgray;
+        border-radius: 20px;
+    }
+
+    .experienceFrance{
+        //border: 3px dotted blue;
+
+        grid-column: 1;
+        grid-row: 1/4;
+        //width: 30%;
+
+        padding: 20px 20px 20px 20px;
+    }
+
+    .experienceCH{
+        //border: 3px dotted purple;
+        //width: 30%;
+
+        grid-column: 2;
+        grid-row: 2/4;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .experienceUK{
+        //border: 3px dotted yellow;
+        //width: 30%;
+        grid-column: 3;
+        grid-row: 2;
+        padding: 20px 20px 20px 20px;
+    }
+    .experienceTHAI{
+        //border: 3px dotted brown;
+        //width: 30%;
+        grid-column: 3;
+        grid-row: 3;
+        padding: 20px 20px 20px 20px;
+    }
+    
 
     .laPhoto{
-        border: 3px dotted blue;
-        width: 45%;
+        //border: 3px dotted orange;
+        //width: 40%;
+
+        //order: -2;
+
+        padding: 20px 20px 20px 20px;
+        grid-column: 2;
+        grid-row: 1;
+        
     }
 
     .laPhotoTools{
@@ -1727,7 +1723,7 @@
         flex-direction: column;
         align-items: center;
 
-        border: 3px solid blueviolet;
+        //border: 3px solid blueviolet;
     }
  
     
@@ -1743,7 +1739,7 @@
     // page experience et education
     footer{
         margin-top: 3%;
-        background-color: lightgrey;
+        background: linear-gradient(lightgrey, #eaeaea);
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -1754,7 +1750,7 @@
 
         #cadreFooter{
 
-            background-color: lightgrey;
+            //background-color: lightgrey;
             width: 100%;
             
             display: flex;
@@ -1806,19 +1802,7 @@
     }
 
     // page education
-
     
-    .couvertHiddenEducation{
-
-        display: none;
-        /*
-        height: 55px;
-        width: 100%;
-        margin: 5%;
-        */
-    }
-    
-
     .formation{
        
         margin: 0 2% 2% 2%;
@@ -1929,17 +1913,6 @@
             color: #7e7e7e;
         }
     }
-
-    
-    .couvertHiddenContact{
-
-        display: none;
-        /*
-        height: 20px;
-        width: 100%;
-        margin: 5%;
-        */
-    }
     
 
     .contact{
@@ -2013,15 +1986,6 @@
             color: #7e7e7e;
 
         }
-    }
-
-    .couvertHiddenImpressum{
-        display: none;
-        /*
-        height: 25px;
-        width: 100%;
-        margin: 5%;
-        */
     }
 
     .impressum{
