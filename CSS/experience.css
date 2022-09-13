@@ -1289,11 +1289,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5% 10% 5% 5%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
+    height: 250px;
     background-color: #eaeaea;
     z-index: 0;
   }
@@ -1305,13 +1301,23 @@
     color: #7e7e7e;
   }
 
+  .education {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+
+  .languagesInterestsHobbies {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
   .formation {
     margin: 0 2% 2% 2%;
     padding: 4% 4% 4% 4%;
     background-color: white;
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
-    width: 45%;
+    width: 100%;
   }
   .formation-title {
     font-size: 1.2em;
@@ -1349,22 +1355,19 @@
   }
 
   .laPhotoEduc {
-    position: fixed;
-    top: 155px;
-    right: 2%;
-    z-index: 0;
-    width: 55%;
+    grid-column: 3;
+    grid-row: 2/4;
   }
 
   .laPhotoEducation {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 3px solid blueviolet;
   }
 
   .lesPixEduc {
     border-radius: 20px;
-    width: 80%;
     object-fit: cover;
   }
 
