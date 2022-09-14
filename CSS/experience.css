@@ -274,6 +274,9 @@
   .headerContact i {
     color: #7e7e7e;
   }
+  .headerContact #grandeResoIcon {
+    display: none;
+  }
 
   .contact {
     margin: 4% 4% 4% 4%;
@@ -595,6 +598,9 @@
   }
   .headerContact i {
     color: #7e7e7e;
+  }
+  .headerContact #grandeResoIcon {
+    display: none;
   }
 
   .contact {
@@ -973,11 +979,13 @@
   .headerContact i {
     color: #7e7e7e;
   }
+  .headerContact #grandeResoIcon {
+    display: none;
+  }
 
   #mainContact {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 450px 450px;
     height: 450px;
   }
 
@@ -1084,7 +1092,9 @@
   main {
     width: 100%;
     background-color: #eaeaea;
-    border: 2px solid red;
+    border: 2px solid darkgray;
+    box-shadow: 3px 3px 4px lightgray;
+    border-radius: 20px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr 2fr 2fr;
@@ -1108,7 +1118,8 @@
     flex-direction: column;
     align-items: center;
     opacity: 1;
-    border: 3px solid purple;
+    border: 3px solid darkgray;
+    box-shadow: 3px 3px 4px lightgray;
   }
   #noVisibleRight .rectangleHautDroit {
     background-color: white;
@@ -1342,7 +1353,7 @@
   .education {
     grid-column: 1;
     grid-row: 1/4;
-    border: 5px solid grey;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1351,7 +1362,6 @@
   .languagesInterestsHobbies {
     grid-column: 2;
     grid-row: 2;
-    border: 4px dotted green;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1365,7 +1375,6 @@
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
     width: 90%;
-    border: 3px solid green;
   }
   .formation-title {
     font-size: 1.2em;
@@ -1399,13 +1408,12 @@
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
     width: 90%;
-    border: 3px dashed orange;
   }
 
   .laPhotoEduc {
     grid-column: 2;
     grid-row: 1;
-    border: 3px dotted blue;
+    margin: 20px;
   }
 
   .laPhotoEducation {
@@ -1413,7 +1421,6 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    border: 3px solid blueviolet;
   }
 
   .lesPixEduc {
@@ -1428,11 +1435,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5% 10% 5% 5%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
+    height: 250px;
     background-color: #eaeaea;
     z-index: 0;
   }
@@ -1443,35 +1446,82 @@
   .headerContact i {
     color: #7e7e7e;
   }
+  .headerContact #petiteResoIcon {
+    display: none;
+  }
+
+  #mainContact {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 450px 450px;
+    border: 5px dotted cyan;
+  }
+  #mainContact .noVisibleRightContact {
+    grid-column: 2;
+    grid-row: 1;
+    border: 3px solid pink;
+  }
+  #mainContact .noVisibleRightContact #rectangleHautDroitContact {
+    width: 85%;
+  }
+
+  #noVisibleRight > #cadreMenuContact {
+    color: #7e7e7e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    border: 5px dashed red;
+    width: 100%;
+  }
+  #noVisibleRight > #cadreMenuContact .cadreMenu-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 5px solid royalblue;
+    width: 100%;
+  }
+
+  .contactSection {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    border: 3px solid brown;
+    padding: 2%;
+    height: 100%;
+  }
 
   .contact {
-    margin: 0 2% 2% 2%;
+    margin: 2% 2% 2% 2%;
     padding: 4% 4% 4% 4%;
     background-color: white;
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
-    width: 45%;
+    width: 85%;
   }
 
   .laPhotoCom {
-    position: fixed;
-    top: 155px;
-    right: 2%;
+    grid-column: 1;
+    grid-row: 1/3;
     z-index: 0;
-    width: 55%;
-    margin-bottom: 5%;
+    border: 4px solid orange;
   }
 
   .laPhotoContact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80%;
   }
 
   .lesPixComm {
     border-radius: 20px;
+    height: 100%;
     width: 80%;
-    max-height: 250px;
     object-fit: cover;
   }
 

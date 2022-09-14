@@ -34,7 +34,8 @@
             <h1 class="headerContact-title"> Contact me  </h1>
 
             <div onclick="clickOpenRight()">
-                <i class="fas fa-bars"> </i>
+                <i class="fas fa-bars" id="petiteResoIcon"> </i>
+                <i class="fas fa-solid fa-arrow-down" id="grandeResoIcon"></i>
             </div>
         
         </header>
@@ -42,9 +43,9 @@
         <main>
 
             <div id="mainContact">
-                <nav id="noVisibleRight">
+                <nav id="noVisibleRight" class="noVisibleRightContact">
 
-                    <div class="rectangleHautDroit" onclick="clickCloseRight()"> 
+                    <div class="rectangleHautDroit" onclick="clickCloseRight()" id="rectangleHautDroitContact"> 
         
                         <i class="fas fa-times iconeCroix"></i>
     
@@ -73,7 +74,7 @@
                 
                     </div>
     
-                    <div class="cadreMenu">
+                    <div class="cadreMenu" id="cadreMenuContact">
     
                         <div class="cadreMenu-section">
                             <a href="index.html"> HOME </a>
@@ -81,7 +82,7 @@
                             <a href="education.html"> EDUCATION </a>
                             <a href="contact.html"> CONTACT </a>
                             <a href="impressum.html"> IMPRESSUM </a>
-                            <a href="./pdf/cvThomasGue.pdf" target="_blank"> CV PDF </a>
+                            <a href="./pdf/cvThomasGue.pdf" target="_blank"> CV/PDF </a>
     
                         </div>
                     </div> 
