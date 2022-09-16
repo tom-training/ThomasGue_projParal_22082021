@@ -246,7 +246,7 @@
             justify-content: center;
             align-items: flex-start;
 
-            margin-top: 5%;
+            margin-top: 10%;
             margin-bottom: 5%;
 
             padding: 0 0 3% 3%;
@@ -261,6 +261,14 @@
             font-size: 0.5em;
         }
 
+    }
+
+    @media (min-width: 500px) and (max-width: 575.98px) {
+        footer{
+            #cadreFooter{
+                margin-top: 21%;
+            }
+        }
     }
 
     // page education
