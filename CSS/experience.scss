@@ -650,7 +650,7 @@
     main{
         width: 100%;
         background-color: #eaeaea;
-        margin-top: 10%;
+        margin-top: 12%;
 
 
         ul{
@@ -743,9 +743,9 @@
             align-items: flex-start;
 
             margin-top: 25%;
-            margin-bottom: 5%;
+            margin-bottom: 2%;
 
-            padding: 0 0 3% 3%;
+            padding: 0 0 2% 3%;
         }
 
         div{
@@ -756,6 +756,19 @@
             font-size: 0.5em;
         }
 
+    }
+
+    @media (min-width: 900px){
+        footer{
+
+            #cadreFooter{
+                
+                margin-top: 26%;
+                margin-bottom: 1%;
+                padding: 0 0 1% 3%;
+                background: linear-gradient(whitesmoke, lightgray);
+            }
+        }
     }
 
     // page education

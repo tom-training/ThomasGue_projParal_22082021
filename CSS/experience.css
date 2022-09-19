@@ -495,7 +495,7 @@
   main {
     width: 100%;
     background-color: #eaeaea;
-    margin-top: 10%;
+    margin-top: 12%;
   }
   main ul {
     margin-left: 1.5em;
@@ -565,8 +565,8 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 25%;
-    margin-bottom: 5%;
-    padding: 0 0 3% 3%;
+    margin-bottom: 2%;
+    padding: 0 0 2% 3%;
   }
   footer div {
     margin-top: 2%;
@@ -574,7 +574,16 @@
   footer .flaticonAttrib {
     font-size: 0.5em;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) and (min-width: 900px) {
+  footer #cadreFooter {
+    margin-top: 26%;
+    margin-bottom: 1%;
+    padding: 0 0 1% 3%;
+    background: linear-gradient(whitesmoke, lightgray);
+  }
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   .headerEducation {
     width: 100%;
     display: flex;
@@ -595,7 +604,8 @@
   .headerEducation #grandeResoIcon {
     display: none;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   .formation {
     margin: 4% 4% 4% 4%;
     padding: 4% 4% 4% 4%;
@@ -624,11 +634,13 @@
   .formation-details {
     margin-bottom: 0.5em;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   h2 {
     padding: 0 5% 0 5%;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   .languages {
     margin: 4% 4% 4% 4%;
     padding: 4% 4% 4% 4%;
@@ -636,11 +648,13 @@
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   .laPhotoEduc {
     display: none;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   .headerContact {
     width: 100%;
     display: flex;
@@ -661,7 +675,8 @@
   .headerContact #grandeResoIcon {
     display: none;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   .contact {
     margin: 4% 4% 4% 4%;
     padding: 4% 4% 4% 4%;
@@ -669,11 +684,13 @@
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   .laPhotoCom {
     display: none;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   #footerContact {
     background-color: #eaeaea;
     margin: 0 0 0 0;
@@ -682,7 +699,8 @@
   #footerContact #cadreFooter {
     background-color: rgba(245, 245, 245, 0.473);
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   .headerImpressum {
     width: 100%;
     display: flex;
@@ -703,7 +721,8 @@
   .headerImpressum #grandeResoIcon {
     display: none;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   .impressum {
     margin: 4% 4% 4% 4%;
     padding: 4% 4% 4% 4%;
@@ -711,7 +730,8 @@
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
   }
-
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
   #footerImpressum {
     background-color: #eaeaea;
   }
