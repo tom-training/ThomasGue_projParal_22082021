@@ -114,9 +114,8 @@
     }
 
 
-
-
     // page experience 
+
     .headerExp{
         width: 100%;
         display: flex;
@@ -127,7 +126,7 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 10%;
+        height: 5%;
         
         background-color: #eaeaea; 
         z-index: 1;
@@ -144,6 +143,48 @@
             display: none;
         }
     }
+
+    /*
+    @media (min-width: 350px) and (max-width: 575.98px){
+
+        .headerExp{
+            height: 5%;
+        }
+    }
+    */
+
+    @media (max-width: 300px){
+        .headerExp{
+            h1{
+                font-size: 1.6em;
+            }
+        }
+        // ça ne fonctionne pas  
+
+
+        #noVisibleRight{
+            .rectangleHautDroit{
+                background-color: white;
+                box-shadow: 0px 3px 2px #cfcfcf;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+            }
+    
+            .iconeCroix{
+                color: #7e7e7e; 
+                height: 50%;
+                margin-left: 5%;
+                margin-right: 10%;
+            }
+
+        }
+        
+
+        // ça ne fonctionne pas
+    }
+    
 
     // page experience et education
 
@@ -216,6 +257,14 @@
         &-whereabouts{
             color: $thirdColor;
             margin-top: 2px;
+        }
+    }
+
+    @media (max-width: 300px){
+        .job{
+            &-dates{
+                font-size: 0.7em;
+            }
         }
     }
 
