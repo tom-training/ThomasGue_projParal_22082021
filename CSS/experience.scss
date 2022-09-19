@@ -1121,22 +1121,24 @@
 
     }
 
-
     // page experience et education
     main{
         width: 100%;
-
         margin-top: 175px;
         background-color: #eaeaea;
-
         //border: 2px solid red;
         
-
         ul{
             //list-style-type: none;
             margin-left: 1.5em;
             margin-bottom: 1em;
-            
+        }
+    }
+
+    @media (min-width: 1776px){
+        
+        main{
+            margin-top: 197px;
         }
     }
 
@@ -1205,11 +1207,16 @@
         position: fixed;
         top: 175px;
         right: 2%;
-        z-index: 0;
+        z-index: 1;
         width: 47%;
 
-        //border: 3px dotted blue;
+    }
 
+    @media (min-width: 1776px){
+        
+        .laPhoto{
+            top: 197px;
+        }
     }
 
     .laPhotoTools{
@@ -1243,7 +1250,7 @@
         align-items: center;
         //margin-top: 10%;
 
-        z-index: 1;
+        z-index: 0;
 
 
         #cadreFooter{
@@ -1256,7 +1263,7 @@
             justify-content: center;
             align-items: flex-start;
 
-            padding: 0 0 3% 3%;
+            padding: 3% 0 3% 3%;
         }
 
         div{
@@ -1308,7 +1315,7 @@
 
     .formation{
        
-        margin: 0 2% 2% 2%;
+        margin: 0 2% 2% 4%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
@@ -1362,8 +1369,8 @@
 
         position: fixed;
         top: 175px;
-        right: 2%;
-        z-index: 0;
+        right: 0;
+        z-index: 1;
         width: 55%;
 
         //border: 3px dotted blue;
@@ -1388,6 +1395,14 @@
 
         //border: 2px dotted purple;
     }
+
+    @media (min-width: 1776px){
+        
+        .laPhotoEduc{
+            top: 197px;
+        }
+    }
+
 
 
     // page contact

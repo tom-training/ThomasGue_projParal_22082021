@@ -862,11 +862,18 @@
     margin-left: 1.5em;
     margin-bottom: 1em;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) and (min-width: 1776px) {
+  main {
+    margin-top: 197px;
+  }
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .titleBigScreen {
     display: none;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .job {
     margin: 0 2% 2% 2%;
     padding: 4% 4% 4% 4%;
@@ -908,34 +915,43 @@
     color: #9356dc;
     margin-top: 2px;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .laPhoto {
     position: fixed;
     top: 175px;
     right: 2%;
-    z-index: 0;
+    z-index: 1;
     width: 47%;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) and (min-width: 1776px) {
+  .laPhoto {
+    top: 197px;
+  }
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .laPhotoTools {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .lesPix {
     border-radius: 20px;
     width: 100%;
     object-fit: cover;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   footer {
     margin-top: 3%;
     background: linear-gradient(lightgrey, #eaeaea);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    z-index: 1;
+    z-index: 0;
   }
   footer #cadreFooter {
     width: 100%;
@@ -943,7 +959,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 0 3% 3%;
+    padding: 3% 0 3% 3%;
   }
   footer div {
     margin-top: 2%;
@@ -951,7 +967,8 @@
   footer .flaticonAttrib {
     font-size: 0.8em;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .headerEducation {
     width: 100%;
     display: flex;
@@ -976,9 +993,10 @@
   .headerEducation #grandeResoIcon {
     display: none;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .formation {
-    margin: 0 2% 2% 2%;
+    margin: 0 2% 2% 4%;
     padding: 4% 4% 4% 4%;
     background-color: white;
     box-shadow: 3px 3px 4px darkgray;
@@ -1006,11 +1024,13 @@
   .formation-details {
     margin-bottom: 0.5em;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   h2 {
     padding: 0 5% 2% 5%;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .languages {
     margin: 0 2% 2% 2%;
     padding: 4% 4% 4% 4%;
@@ -1019,27 +1039,36 @@
     border-radius: 20px;
     width: 45%;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .laPhotoEduc {
     position: fixed;
     top: 175px;
-    right: 2%;
-    z-index: 0;
+    right: 0;
+    z-index: 1;
     width: 55%;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .laPhotoEducation {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .lesPixEduc {
     border-radius: 20px;
     width: 80%;
     object-fit: cover;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) and (min-width: 1776px) {
+  .laPhotoEduc {
+    top: 197px;
+  }
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .headerContact {
     width: 100%;
     display: flex;
@@ -1064,19 +1093,22 @@
   .headerContact #grandeResoIcon {
     display: none;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   #mainContact {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 450px;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .contactSection {
     grid-column: 1;
     display: flex;
     justify-content: center;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .contact {
     padding: 4% 4% 4% 4%;
     background-color: white;
@@ -1088,30 +1120,35 @@
     flex-direction: column;
     justify-content: space-around;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .laPhotoCom {
     grid-column: 2;
     z-index: 0;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .laPhotoContact {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 80%;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .lesPixComm {
     border-radius: 20px;
     height: 100%;
     width: 80%;
     object-fit: cover;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   #footerContact {
     background: linear-gradient(lightgrey, #eaeaea);
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .headerImpressum {
     width: 100%;
     display: flex;
@@ -1132,7 +1169,8 @@
   .headerImpressum #grandeResoIcon {
     display: none;
   }
-
+}
+@media (min-width: 991.99px) and (max-width: 1999.99px) {
   .impressum {
     margin: 0 4% 0 4%;
     padding: 4% 4% 4% 4%;
