@@ -85,7 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10% 10% 10% 5%;
+    padding: 10% 10% 10% 10%;
     position: fixed;
     top: 0;
     left: 0;
@@ -238,7 +238,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10% 10% 10% 5%;
+    padding: 10% 10% 10% 7%;
     position: fixed;
     top: 0;
     left: 0;
@@ -473,7 +473,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 10% 5% 5%;
+    padding: 5% 6% 5% 5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -589,7 +589,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 10% 5% 5%;
+    padding: 5% 5% 5% 5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -834,7 +834,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 10% 5% 5%;
+    padding: 5% 5% 5% 5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -974,7 +974,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 10% 5% 5%;
+    padding: 5% 6% 5% 5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -1074,7 +1074,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 10% 5% 5%;
+    padding: 5% 5% 5% 5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -1115,7 +1115,7 @@
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
     height: 80%;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1139,7 +1139,7 @@
   .lesPixComm {
     border-radius: 20px;
     height: 100%;
-    width: 80%;
+    width: 90%;
     object-fit: cover;
   }
 }
@@ -1154,7 +1154,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 10% 5% 5%;
+    padding: 5% 5% 5% 5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -1177,6 +1177,9 @@
     background-color: white;
     box-shadow: 3px 3px 4px darkgray;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
   }
 }
 @media (min-width: 2000px) {
@@ -1612,13 +1615,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100%;
   }
 
   .lesPixComm {
     border-radius: 20px;
-    height: 100%;
-    width: 80%;
+    height: 94%;
+    width: 93%;
     object-fit: cover;
   }
 
