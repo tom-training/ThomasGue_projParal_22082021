@@ -18,7 +18,6 @@
             function clickClose(){
                
                document.getElementById("noVisibleLeft").style.display = "none";
-   
                document.getElementById("noVisibleLeft").style.opacity = "0";
            }
    
@@ -26,20 +25,21 @@
                document.getElementById("noVisibleLeft").style.display = "block";
                document.getElementById("noVisibleLeft").style.opacity = "1";
            }
-   
-           function clickOpenRight(){
+        }
+
+        if(window.matchMedia("(max-width: 575.98px)").matches){
+
+            function clickOpenRight(){
                document.getElementById("noVisibleRight").style.display = "block";
                document.getElementById("noVisibleRight").style.opacity = "1";
            }
    
            function clickCloseRight(){
                   
-                  document.getElementById("noVisibleRight").style.display = "none";
-      
-                  document.getElementById("noVisibleRight").style.opacity = "0";
+                document.getElementById("noVisibleRight").style.display = "none";
+                document.getElementById("noVisibleRight").style.opacity = "0";
            }
-
-        } 
+        }   
 
         /* fonction pour gérer l'animation du décompte jusqu'à 100 */
         var _counter = 1;
@@ -87,7 +87,6 @@
     <!-- Start of the index page-->
     <div id="mainContainer">
 
-        <!-- C'EST PROPRE -->
         <header>
 
            <div onclick="clickOpen()" class="buttonLeft">
@@ -99,26 +98,26 @@
            </div>
            
         </header>
-        <!-- C'EST PROPRE -->
+        
 
         <main>
-            <!-- small tag on the right end side with flags -->
+            <!-- small tag on the left end side with flags -->
             <nav>
 
                 <div class="flagSlot" id="eng">
-                    <a href=" " class="flags"> 
+                    <a href="#"> 
                         <img rel="icon" src="./CSS/images/uk.png"/>
                     </a>
                 </div>
                
                 <div class="flagSlot" id="ger">
-                    <a href=" " class="flags" > 
+                    <a href="#"> 
                         <img rel="icon" src="./CSS/images/german.png"/>
                     </a>
                 </div>
                
                 <div class="flagSlot" id="fren">
-                    <a href=" " class="flags"> 
+                    <a href="#"> 
                         <img rel="icon" src="./CSS/images/france.png"/>
                     </a>
                 </div>
@@ -129,9 +128,8 @@
             
             <div id="noVisibleLeft">
 
-                <!-- <div class="couvert-hidden_noVisibleLeft"></div> -->
-
                 <section class="blanche">
+
                     <article class="rectangleHaut" onclick="clickClose()"> 
                 
                         <i class="fas fa-ellipsis-v"> </i>   
@@ -152,6 +150,7 @@
                         <p> Experienced Financial Accountant </p>
                         <p> Currently retraining in Web Development</p>
                     </article>
+
                 </section>
 
                 <section class="grise">
@@ -181,7 +180,7 @@
                                     100% 
                                 </div>
                             </div>
-                            <p class="french"> French </p>
+                            <p> French </p>
                         </div>
 
                         <div class="cadreLanguages-anglais">
@@ -191,7 +190,7 @@
                                 </div>
                             </div>
                             <div class= "incruste"> </div>
-                            <p class= "english"> English </p>
+                            <p> English </p>
                         </div>
 
                         <div class="cadreLanguages-allemand">
@@ -200,7 +199,7 @@
                                     75% 
                                 </div>
                             </div>
-                            <p class= "deutsch"> German </p>
+                            <p> German </p>
                         </div>
                         
                     </article>
@@ -208,6 +207,7 @@
                     <hr class="trait"/>
 
                     <article class="cadreCompetences">
+
                         <p> <i class="fas fa-check"></i> Financial accounting </p>
                         <p> <i class="fas fa-check"></i> Admin. in accounting dept </p>
                         <p> <i class="fas fa-check"></i> Payroll accounting </p>
@@ -218,37 +218,49 @@
                     <hr class="trait"/>
 
                     <article class="cadreCompIT">
+
                         <p> HTML & CSS </p>
+                        
                         <div class="barProg"> 
                             <div class="barProg__grey"> </div>
                             <div class="barProg__orange percentHigh"> </div>
                         </div>
                         
                         <p> SASS </p>
+
                         <div class="barProg"> 
                             <div class="barProg__grey"> </div>
                             <div class="barProg__orange percentHigh"> </div>
                         </div>
+
                         <p> Javascript </p>
+
                         <div class="barProg"> 
                             <div class="barProg__grey"> </div>
                             <div class="barProg__orange percentMedium"> </div>
                         </div>
+
                         <p> AJAX </p>
+
                         <div class="barProg"> 
                             <div class="barProg__grey"> </div>
                             <div class="barProg__orange percentMedium"> </div>
                         </div>
+
                         <p> Node JS in progress </p>
+
                         <div class="barProg"> 
                             <div class="barProg__grey"> </div>
                             <div class="barProg__orange percentLow"> </div>
                         </div>
+
                         <p> SQL in progress </p>
+
                         <div class="barProg"> 
                             <div class="barProg__grey"> </div>
                             <div class="barProg__orange percentLow"> </div>
                         </div>
+                        
                     </article>
 
                 </section>
@@ -268,6 +280,7 @@
                 <div class="cadreMenu">
 
                     <div class="cadreMenu-section">
+
                         <a href="index.html"> HOME </a>
                         <a href="experience.html"> CV </a>
                         <a href="education.html"> EDUCATION </a>
@@ -422,4 +435,5 @@
 
     </div>
 </body>
+
 </html>
