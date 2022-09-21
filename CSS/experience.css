@@ -145,6 +145,11 @@
   }
 }
 @media (max-width: 575.98px) {
+  nav img {
+    width: 20px;
+  }
+}
+@media (max-width: 575.98px) {
   .titleBigScreen {
     display: none;
   }
@@ -500,6 +505,10 @@
   main ul {
     margin-left: 1.5em;
     margin-bottom: 1em;
+  }
+
+  nav img {
+    width: 20px;
   }
 
   .titleBigScreen {
@@ -861,6 +870,10 @@
   main ul {
     margin-left: 1.5em;
     margin-bottom: 1em;
+  }
+
+  nav img {
+    width: 25px;
   }
 }
 @media (min-width: 991.99px) and (max-width: 1999.99px) and (min-width: 1776px) {
@@ -1227,6 +1240,10 @@
   main ul {
     margin-left: 1.5em;
     margin-bottom: 1em;
+  }
+
+  nav img {
+    width: 35px;
   }
 
   #noVisibleRight {
