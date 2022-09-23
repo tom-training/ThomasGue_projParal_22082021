@@ -13,16 +13,20 @@
 
     <script type="text/javascript">
 
-        function clickOpenRight(){
+        if(window.matchMedia("(max-width: 1999.99px)").matches){
+
+            function clickOpenRight(){
             document.getElementById("noVisibleRight").style.display = "block";
             document.getElementById("noVisibleRight").style.opacity = "1";
-        }
+            }
 
-        function clickCloseRight(){
+            function clickCloseRight(){
             
             document.getElementById("noVisibleRight").style.display = "none";
 
             document.getElementById("noVisibleRight").style.opacity = "0";
+            }
+            
         }
 
     </script>

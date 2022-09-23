@@ -10,6 +10,7 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        position: relative;
     }
 
     *{
@@ -107,12 +108,11 @@
     .launcher{
         width: 100%;
 
-        /* A REACTIVER WHEN FINISHED 
-        display: flex; */
+        /* A désactiver si besoin */ 
+        display: flex;
         
-        /* A EFFACER */ 
-        display: none;   
-
+        /* A activer si besoin 
+        display: none; */
 
         justify-content: center;
         align-items: center;
@@ -207,10 +207,9 @@
         width: 100%;
         position: relative;
 
-        /* A REACTIVER WHEN FINISHED */
-        /*
+        
         animation: apparition 1000ms 5500ms;
-        animation-fill-mode: backwards; */
+        animation-fill-mode: backwards; 
      }
 
     header{
@@ -969,11 +968,11 @@
     .launcher{
         width: 100%;
 
-        /* A REACTIVER WHEN FINISHED 
-        display: flex; */
         
-        /* A EFFACER */ 
-        display: none;   
+        display: flex;
+        
+        /* A réactiver si besoin
+        display: none;   */ 
 
 
         justify-content: center;
@@ -1069,10 +1068,9 @@
         width: 100%;
         position: relative;
 
-        /* A REACTIVER WHEN FINISHED */
-        /*
+        
         animation: apparition 1000ms 5500ms;
-        animation-fill-mode: backwards; */
+        animation-fill-mode: backwards; 
      }
 
     header{
@@ -1858,11 +1856,11 @@
     .launcher{
         width: 100%;
 
-        /* A REACTIVER WHEN FINISHED 
-        display: flex; */
+        /* A désACTIVER si besoin */
+        display: flex; 
         
-        /* A EFFACER */ 
-        display: none;   
+        /* A réactiver si besoin 
+        display: none;   */
 
 
         justify-content: center;
@@ -1960,11 +1958,8 @@
         width: 100%;
         position: relative;
         
-
-        /* A REACTIVER WHEN FINISHED */
-        /*
         animation: apparition 1000ms 5500ms;
-        animation-fill-mode: backwards; */
+        animation-fill-mode: backwards;
      }
 
     header{
@@ -2781,12 +2776,12 @@
     .launcher{
         width: 100%;
 
-        /* A REACTIVER WHEN FINISHED 
-        display: flex; */
+        /* A désactiver si besoin */ 
+        display: flex; 
         
-        /* A EFFACER */ 
+        /* A réactiver si besoin
         display: none;   
-
+        */ 
 
         justify-content: center;
         align-items: center;
@@ -2883,11 +2878,8 @@
         width: 100%;
         position: relative;
         
-
-        /* A REACTIVER WHEN FINISHED */
-        /*
         animation: apparition 1000ms 5500ms;
-        animation-fill-mode: backwards; */
+        animation-fill-mode: backwards; 
      }
 
     header{
