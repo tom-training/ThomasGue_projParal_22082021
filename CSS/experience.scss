@@ -1258,15 +1258,13 @@
    
     // page experience et education
     footer{
-        margin-top: 3%;
-        //background-color: lightgrey;
+        
+        width: 100%;
         background: linear-gradient(lightgrey, #eaeaea);
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        //margin-top: 10%;
-
-        z-index: 0;
+        z-index: 2;
 
 
         #cadreFooter{
@@ -1279,7 +1277,7 @@
             justify-content: center;
             align-items: flex-start;
 
-            padding: 3% 0 3% 3%;
+            padding: 0 0 3% 3%;
         }
 
         div{
@@ -1372,7 +1370,7 @@
 
     .languages{
 
-        margin: 0 2% 2% 2%;
+        margin: 0 2% 2% 4%;
         padding: 4% 4% 4% 4%;
         background-color: white;
         box-shadow: 3px 3px 4px darkgray;
@@ -1505,6 +1503,17 @@
     #footerContact{
 
         background: linear-gradient(lightgrey, #eaeaea);
+        margin-top: 1%;
+
+        
+    }
+
+    @media (min-width: 1800px){
+
+        #footerContact{
+            margin-top: 4%;
+        }
+        
     }
 
     // page impressum
@@ -1546,6 +1555,11 @@
         font-size: 1.5em;
     }
 
+    #footerImpressum{
+
+        margin-top: 4%;
+
+    }
 }
 
 @media (min-width: 2000.00px) {
