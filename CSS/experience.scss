@@ -63,20 +63,16 @@
             
             background-color: white;
             box-shadow: 0px 3px 2px #cfcfcf;
-
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
             height: 40px;
-
-
         }
+
         .iconeCroix{
             color: #7e7e7e; 
             height: 50%;
             margin-left: 5%;
-
         }
 
         .lesFlags{
@@ -92,13 +88,11 @@
         }
 
         .cadreMenu{
-
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             margin-top: 15%;
-
             color: #7e7e7e;
 
             a{
@@ -123,7 +117,6 @@
         left: 0;
         right: 0;
         height: 5%;
-        
         background-color: #eaeaea; 
         z-index: 1;
         
@@ -140,23 +133,12 @@
         }
     }
 
-    /*
-    @media (min-width: 350px) and (max-width: 575.98px){
-
-        .headerExp{
-            height: 5%;
-        }
-    }
-    */
-
     @media (max-width: 300px){
         .headerExp{
             h1{
                 font-size: 1.6em;
             }
         }
-        // ça ne fonctionne pas  
-
 
         #noVisibleRight{
             .rectangleHautDroit{
@@ -174,17 +156,9 @@
                 margin-left: 5%;
                 margin-right: 10%;
             }
-
         }
-        
-
-        // ça ne fonctionne pas
     }
     
-
-    // page experience et education
-
-
     // page experience et education
     main{
         width: 100%;
@@ -192,10 +166,8 @@
         margin-top: 17%;
 
         ul{
-            //list-style-type: none;
             margin-left: 1.5em;
-            margin-bottom: 1em;
-            
+            margin-bottom: 1em;  
         }
     }
 
@@ -235,7 +207,6 @@
             align-items: center;
             border-radius: 20px;
             background: linear-gradient(135deg, #eaeaea, lightgray);
-            
             height: 2em;
             width: 40%;
             text-decoration: none;
@@ -283,24 +254,16 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        //padding-top: 4%;
-        //margin-top: 10%;
-
-
 
         #cadreFooter{
             background-color: whitesmoke;
-            //background-color: rgba(245, 245, 245, 0.473);
             width: 90%;
-            
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-
             margin-top: 10%;
             margin-bottom: 5%;
-
             padding: 0 0 3% 3%;
             border-radius: 5px;
         }
@@ -376,7 +339,6 @@
             align-items: center;
             border-radius: 20px;
             background: linear-gradient(135deg, #eaeaea, lightgray);
-            
             height: 2em;
             width: 40%;
             text-decoration: none;
@@ -419,19 +381,15 @@
         height: 10%;
         background-color: #eaeaea; 
         z-index: 1;
-        
 
         i{
             color: #7e7e7e;
-
         }
 
         #grandeResoIcon{
             display: none;
         }
     }
-
-
 
     .contact{
         margin: 4% 4% 4% 4%;
@@ -450,12 +408,9 @@
         background-color: #eaeaea;
 
         #cadreFooter{
-            
             background-color: rgba(245, 245, 245, 0.473);
         }
-
     }
-
 
     // page impressum
 
@@ -476,7 +431,6 @@
         
         i{
             color: #7e7e7e;
-
         }
 
         #grandeResoIcon{
@@ -486,7 +440,6 @@
 
 
     .impressum{
-
         margin: 4% 4% 4% 4%;
         padding: 4% 4% 4% 4%;
         background-color: white;
@@ -499,19 +452,14 @@
         background-color: #eaeaea;
 
         #cadreFooter{
-            
             background-color: rgba(245, 245, 245, 0.473);
         }
-
-
     }
 }
 
 
 
 @media (min-width: 575.99px) and (max-width: 991.98px) {
-
-    // page experience.html
 
     // page experience et education
     body{
@@ -586,24 +534,19 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-right: 5%;
-
-            
+            margin-right: 5%;  
         }
 
         .flagSlot{
-            
             margin-right: 10%;
         }
 
         .cadreMenu{
-
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             margin-top: 15%;
-
             color: #7e7e7e;
 
             a{
@@ -646,20 +589,15 @@
     }
 
     // page experience et education
-
-
-    // page experience et education
     main{
         width: 100%;
         background-color: #eaeaea;
         margin-top: 12%;
 
-
         ul{
             //list-style-type: none;
             margin-left: 1.5em;
             margin-bottom: 1em;
-            
         }
     }
 
@@ -699,7 +637,6 @@
             align-items: center;
             border-radius: 20px;
             background: linear-gradient(135deg, #eaeaea, lightgray);
-            
             height: 2em;
             width: 40%;
             text-decoration: none;
@@ -718,7 +655,6 @@
             &__contract{
                 margin-bottom: 0.5em;
             }
-
         }
 
         &-whereabouts{
@@ -728,7 +664,6 @@
     }
 
     .laPhoto{
-
         display: none;
     }
    
@@ -738,22 +673,16 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        
-
-
 
         #cadreFooter{
             background-color: whitesmoke;
             width: 90%;
-            
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-
             margin-top: 25%;
             margin-bottom: 2%;
-
             padding: 0 0 2% 3%;
         }
 
@@ -771,7 +700,6 @@
         footer{
 
             #cadreFooter{
-                
                 margin-top: 26%;
                 margin-bottom: 1%;
                 padding: 0 0 1% 3%;
@@ -831,7 +759,6 @@
             align-items: center;
             border-radius: 20px;
             background: linear-gradient(135deg, #eaeaea, lightgray);
-            
             height: 2em;
             width: 40%;
             text-decoration: none;
@@ -930,7 +857,6 @@
         
         i{
             color: #7e7e7e;
-
         }
 
         #grandeResoIcon{
@@ -952,12 +878,10 @@
 
         background-color: #eaeaea;
 
-
         #cadreFooter{
             
             background-color: rgba(245, 245, 245, 0.473);
         }
-
     }
 }
 

@@ -206,11 +206,19 @@
         flex-wrap: wrap;
         width: 100%;
         position: relative;
-
-        
         animation: apparition 1000ms 5500ms;
         animation-fill-mode: backwards; 
-     }
+    }
+
+    #mainContainerHome{
+        max-width: 550px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+    }
 
     header{
         width: 100%;
@@ -1067,11 +1075,19 @@
         flex-wrap: wrap;
         width: 100%;
         position: relative;
-
-        
         animation: apparition 1000ms 5500ms;
         animation-fill-mode: backwards; 
-     }
+    }
+
+    #mainContainerHome{
+        max-width: 950px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+    }
 
     header{
         width: 100%;
@@ -1776,10 +1792,8 @@
     $thirdColor: #9356dc;
     $fourthColor: #721cad;
 
-    
 
-
-    /* keyframes 1/4 used in the DIV launcher for the disappeance of the load progress bar */
+    /* keyframes 1/4 used in the DIV launcher for the disappeance of the load progress bar  */
     @keyframes disparition{
         0%{
             opacity: 1;
@@ -1791,7 +1805,7 @@
         }
     }
 
-    /* keyframes 2/4 used in the DIV mainContainer for the apparition of the index page */
+    /* keyframes 2/4 used in the DIV mainContainer for the apparition of the index page */ 
     @keyframes apparition{
         0%{
             opacity: 0;
@@ -1814,7 +1828,9 @@
         }
     }
 
+    
     /* keyframes 3/4 used in the launcher-titre__un and launcher-titre__deux */
+
     @keyframes titel {
         0%{
             transform: scaleX(0);
@@ -1828,6 +1844,7 @@
     }
     
     /* keyframes 4/4 used in the launcher-progressBar__grey and launcher-progressBar__orange */
+    
     @keyframes barDeProgressionOrange{
 
         0%{
@@ -1960,7 +1977,18 @@
         
         animation: apparition 1000ms 5500ms;
         animation-fill-mode: backwards;
-     }
+    }
+
+    #mainContainerHome{
+        max-width: 1920px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+    }
 
     header{
 
@@ -2880,7 +2908,19 @@
         
         animation: apparition 1000ms 5500ms;
         animation-fill-mode: backwards; 
-     }
+    }
+
+    #mainContainerHome{
+        max-width: 3920px;
+        margin: auto;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+    }
 
     header{
 

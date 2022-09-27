@@ -103,15 +103,6 @@
   .headerExp #grandeResoIcon {
     display: none;
   }
-
-  /*
-  @media (min-width: 350px) and (max-width: 575.98px){
-
-      .headerExp{
-          height: 5%;
-      }
-  }
-  */
 }
 @media (max-width: 575.98px) and (max-width: 300px) {
   .headerExp h1 {

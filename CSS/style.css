@@ -168,6 +168,16 @@
     animation-fill-mode: backwards;
   }
 
+  #mainContainerHome {
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+  }
+
   header {
     width: 100%;
     box-shadow: 0px 3px 2px #cfcfcf;
@@ -871,6 +881,16 @@
     animation-fill-mode: backwards;
   }
 
+  #mainContainerHome {
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+  }
+
   header {
     width: 100%;
     box-shadow: 0px 3px 2px #cfcfcf;
@@ -1448,7 +1468,7 @@
     text-decoration: none;
   }
 
-  /* keyframes 1/4 used in the DIV launcher for the disappeance of the load progress bar */
+  /* keyframes 1/4 used in the DIV launcher for the disappeance of the load progress bar  */
   @keyframes disparition {
     0% {
       opacity: 1;
@@ -1593,6 +1613,17 @@
     position: relative;
     animation: apparition 1000ms 5500ms;
     animation-fill-mode: backwards;
+  }
+
+  #mainContainerHome {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
   }
 
   header {
@@ -2338,6 +2369,17 @@
     position: relative;
     animation: apparition 1000ms 5500ms;
     animation-fill-mode: backwards;
+  }
+
+  #mainContainerHome {
+    max-width: 3920px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
   }
 
   header {

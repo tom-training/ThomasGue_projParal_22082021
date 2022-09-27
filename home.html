@@ -18,27 +18,8 @@
 <body>
 
 
-    <div class="launcher" id="launcher">
-        <div class="launcher-titre"> 
-            
-            <div class="launcher-titre__un"> Thomas </div>
-            <div class="launcher-titre__deux"> Gué </div> 
-        
-        </div> 
-
-        <div class="launcher-progressBar">  
-            
-            <div class="launcher-progressBar__grey"> </div>
-            <div class="launcher-progressBar__orange"> </div>  
-
-        </div>
-
-        <div class="launcher-countdown"> <span id="demo"> 0 </span> % </div>
-
-    </div>
-
     <!-- Start of the index page-->
-    <div id="mainContainer">
+    <div id="mainContainerHome">
 
         <header>
 
@@ -417,20 +398,6 @@
                 document.getElementById("noVisibleRight").style.opacity = "0";
            }
         }   
-
-        /* fonction pour gérer l'animation du décompte jusqu'à 100  */
-        var _counter = 1;
-        var _timer = null;
-        function test() {      	
-        _counter = 0;
-        _timer = setInterval(function(){
-            document.getElementById("demo").innerHTML = _counter;
-            _counter = _counter + 10;
-            if(_counter > 100) clearInterval(_timer);
-        }, 100);
-        }
-
-        window.onload = test();
 
     </script>
 
