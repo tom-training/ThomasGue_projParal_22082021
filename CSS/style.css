@@ -553,7 +553,6 @@
     color: #7e7e7e;
   }
 
-  /* C'EST PROPRE */
   nav {
     display: grid;
     grid-template-columns: 1fr;
@@ -589,9 +588,7 @@
     width: 20px;
   }
 
-  /* C'EST PROPRE */
   .couvert {
-    /* border: 1px solid red; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1000,28 +997,12 @@
     grid-column: 1;
     max-height: 100vh;
     overflow-y: scroll;
-    /*.couvert-hidden_noVisibleLeft{
-        height: 56px;
-        width: 100%;
-        margin: 5%;
-    }*/
   }
   #noVisibleLeft .blanche {
     background-color: whitesmoke;
   }
   #noVisibleLeft .rectangleHaut {
     display: none;
-    /*
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 10%;
-    padding-top: 10%;
-    margin-bottom: 10%;
-
-    i{
-        color: #7e7e7e;
-    }
-    */
   }
   #noVisibleLeft .cadreIdentite {
     width: 100%;
@@ -1243,7 +1224,6 @@
     transform-origin: 0% 50%;
   }
 
-  /* A FAIRE */
   #noVisibleRight {
     position: fixed;
     top: 0;
@@ -1282,7 +1262,6 @@
     color: #7e7e7e;
   }
 
-  /* C'EST PROPRE */
   nav {
     display: grid;
     grid-template-rows: 1fr;
@@ -1318,9 +1297,7 @@
     width: 25px;
   }
 
-  /* C'EST PROPRE */
   .couvert {
-    /* border: 1px solid red; */
     width: 100%;
     grid-column: 2/4;
     display: flex;
@@ -1371,7 +1348,6 @@
     margin: 5%;
     width: 90%;
     padding: 5%;
-    /* border: 1px solid brown; */
   }
   .couvert-section__blanche {
     background-color: whitesmoke;
@@ -1628,33 +1604,6 @@
 
   header {
     display: none;
-    /*
-    width: 100%;
-    box-shadow: 0px 3px 2px #cfcfcf;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 130px;
-    background-color: whitesmoke;   
-
-    i{
-        color: #7e7e7e;
-    }
-
-    #lesPoints{
-        display: none;
-    }
-
-    .fa-bars{
-        display: none;
-    }
-
-    */
   }
 
   main {
@@ -1747,28 +1696,12 @@
     grid-row: 1;
     max-height: 100vh;
     overflow-y: scroll;
-    /*.couvert-hidden_noVisibleLeft{
-        height: 56px;
-        width: 100%;
-        margin: 5%;
-    }*/
   }
   #noVisibleLeft .blanche {
     background-color: whitesmoke;
   }
   #noVisibleLeft .rectangleHaut {
     display: none;
-    /*
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 10%;
-    padding-top: 10%;
-    margin-bottom: 10%;
-
-    i{
-        color: #7e7e7e;
-    }
-    */
   }
   #noVisibleLeft .cadreIdentite {
     width: 100%;
@@ -1991,10 +1924,6 @@
   }
 
   #noVisibleRight {
-    /*
-    grid-column: 3;
-    grid-row: 1;
-    */
     position: fixed;
     top: 0;
     bottom: 0;
@@ -2007,12 +1936,6 @@
   }
   #noVisibleRight .rectangleHautDroit {
     display: none;
-    /*
-    background-color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    */
   }
   #noVisibleRight .iconeCroix {
     display: none;
@@ -2033,7 +1956,6 @@
     color: #7e7e7e;
   }
 
-  /* C'EST PROPRE */
   nav {
     display: grid;
     grid-template-rows: 1fr;
@@ -2069,9 +1991,7 @@
     width: 30px;
   }
 
-  /* C'EST PROPRE */
   .couvert {
-    /* border: 1px solid red; */
     width: 100%;
     grid-column: 2;
     grid-row: 1;
@@ -2084,10 +2004,6 @@
   }
   .couvert-hidden {
     display: none;
-    /*height: 100px;
-    width: 100%;
-    margin: 5%;
-    */
   }
   .couvert-photo {
     width: 90%;
@@ -2126,7 +2042,6 @@
     margin: 5%;
     width: 90%;
     padding: 5%;
-    /* border: 1px solid brown; */
   }
   .couvert-section__blanche {
     background-color: whitesmoke;
@@ -2384,33 +2299,6 @@
 
   header {
     display: none;
-    /*
-    width: 100%;
-    box-shadow: 0px 3px 2px #cfcfcf;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 130px;
-    background-color: whitesmoke;   
-
-    i{
-        color: #7e7e7e;
-    }
-
-    #lesPoints{
-        display: none;
-    }
-
-    .fa-bars{
-        display: none;
-    }
-
-    */
   }
 
   main {
@@ -2728,13 +2616,6 @@
   #noVisibleRight {
     grid-column: 3;
     grid-row: 1/3;
-    /*
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 87%;
-    */
     display: block;
     opacity: 1;
     background-color: #eaeaea;
@@ -2743,12 +2624,6 @@
   }
   #noVisibleRight .rectangleHautDroit {
     display: none;
-    /*
-    background-color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    */
   }
   #noVisibleRight .iconeCroix {
     display: none;
@@ -2769,21 +2644,12 @@
     color: #7e7e7e;
   }
 
-  /* C'EST PROPRE */
   nav {
     grid-column: 1;
     grid-row: 1;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    /*width: 150px;
-    height: 50px;
-
-
-    position: fixed;
-    top: 10px;
-    left: 30px;
-    */
     background-color: whitesmoke;
   }
   nav .flagSlot {
@@ -2812,7 +2678,6 @@
 
   /* C'EST PROPRE */
   .couvert {
-    /* border: 1px solid red; */
     width: 100%;
     grid-column: 2;
     grid-row: 1/3;
@@ -2825,10 +2690,6 @@
   }
   .couvert-hidden {
     display: none;
-    /*height: 100px;
-    width: 100%;
-    margin: 5%;
-    */
   }
   .couvert-photo {
     width: 90%;
@@ -2867,7 +2728,6 @@
     margin: 5%;
     width: 90%;
     padding: 5%;
-    /* border: 1px solid brown; */
   }
   .couvert-section__blanche {
     background-color: whitesmoke;

@@ -1234,10 +1234,6 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr 2fr 2fr;
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    */
   }
   main ul {
     margin-left: 1.5em;
