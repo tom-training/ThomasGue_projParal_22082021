@@ -785,8 +785,8 @@
 
         .lesChiffres{
             display: grid;
-            grid-template-columns: 2;
-            grid-template-rows: 3;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             padding: 0;
             font-size: 0.8em;
             gap: 20px;
@@ -1640,8 +1640,8 @@
 
         .lesChiffres{
             display: grid;
-            grid-template-columns: 2;
-            grid-template-rows: 3;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             padding: 0;
             font-size: 0.8em;
             gap: 20px;
@@ -2471,8 +2471,8 @@
 
         .lesChiffres{
             display: grid;
-            grid-template-columns: 2;
-            grid-template-rows: 3;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             padding: 0;
             font-size: 0.8em;
             gap: 20px;
@@ -3299,8 +3299,8 @@
 
         .lesChiffres{
             display: grid;
-            grid-template-columns: 2;
-            grid-template-rows: 3;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             padding: 0;
             font-size: 0.8em;
             gap: 20px;
