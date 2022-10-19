@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="CSS/prefixed/experience.css">
+    
+    <script src="https://kit.fontawesome.com/e7879f2a3a.js" crossorigin="anonymous"></script> 
+
+    <title>contactez moi</title>
+
+    <script>
+
+        function clickOpenRight(){
+            document.getElementById("noVisibleRight").style.display = "block";
+            document.getElementById("noVisibleRight").style.opacity = "1";
+        }
+
+        function clickCloseRight(){
+            document.getElementById("noVisibleRight").style.display = "none";
+            document.getElementById("noVisibleRight").style.opacity = "0";
+        }
+
+    </script>
+</head>
+<body>
+
+    <div id="mainContainer">
+
+        <header class="headerContact">
+
+            <h1> Pour me contacter  </h1>
+
+            <div onclick="clickOpenRight()">
+                <i class="fas fa-bars" id="petiteResoIcon"> </i>
+                <i class="fas fa-solid fa-arrow-down" id="grandeResoIcon"></i>
+            </div>
+        
+        </header>
+
+        <main>
+
+            <div id="mainContact">
+                <nav id="noVisibleRight" class="noVisibleRightContact">
+
+                    <div class="rectangleHautDroit" onclick="clickCloseRight()" id="rectangleHautDroitContact"> 
+        
+                        <i class="fas fa-times iconeCroix"></i>
+    
+                        <div class="lesFlags">
+                        
+                            <div class="flagSlot" id="eng">
+                                <a href="contact.html" class="flags"> 
+                                    <img rel="icon" alt="british flag" src="./CSS/images/uk.png" style="width: 20px;">
+                                </a>
+                            </div>
+                           
+                            <div class="flagSlot" id="ger">
+                                <a href="contactde.html" class="flags" > 
+                                    <img rel="icon" alt="german flag" src="./CSS/images/german.png" style="width: 20px;">
+                                </a>
+                            </div>
+                           
+                            <div class="flagSlot" id="fren">
+                                <a href="contactfr.html" class="flags"> 
+                                    <img rel="icon" alt="french flag" src="./CSS/images/france.png" style="width: 20px;">
+                                </a>
+                            </div>
+        
+                        </div>
+        
+                
+                    </div>
+    
+                    <div class="cadreMenu" id="cadreMenuContact">
+    
+                        <div class="cadreMenu-section">
+                            <a href="homefr.html"> ACCUEIL </a>
+                            <a href="experiencefr.html"> CV </a>
+                            <a href="educationfr.html"> FORMATION </a>
+                            <a href="contactfr.html"> CONTACT </a>
+                            <a href="impressumfr.html"> IMPRESSUM </a>
+                            <a href="./pdf/cvThomasGue.pdf" target="_blank"> CV PDF EN </a>
+                            <a href="./pdf/cvThomasGueDe.pdf" target="_blank"> CV PDF DE </a>
+    
+                        </div>
+                    </div> 
+                </nav>
+    
+    
+                <section class="contactSection">
+    
+                    <article class="contact">
+    
+                        <p> 
+                            Pour plus d'informations, je suis à votre disposition n'hésitez pas à me contacter:    
+                        </p>
+
+                        <br>
+
+                        <p>  
+                            +33 (0)6 59 76 95 21<br>  
+                            +49 (0) 15 20 400 8767<br> 
+                        </p>
+
+                        <br>
+                        
+                        <p>
+                            <a href="mailto:thomasgue77@gmail.com"> thomasgue77@gmail.com </a> <br>
+                            <a href="mailto:contact@thomasgue.info"> contact@thomasgue.info </a>   
+                        </p>
+                            
+                    </article>
+    
+                </section>
+    
+                
+                <section class="laPhotoCom">
+    
+                    <figure class="laPhotoContact">
+                        
+                        <img src="photos/smartphone.jpg" alt="computer and mobile phone" class="lesPixComm">
+    
+                    </figure>
+    
+                </section>
+
+            </div>
+
+        </main>
+
+        <footer id="footerContact">
+            <div id="cadreFooter">
+
+                <div> 
+                    impressum
+                </div>
+
+                <div class= "flaticonAttrib">
+
+                    Icônes des drapeaux britannique et allemand réalisées par 
+                    
+                    <a href="https://www.flaticon.com/authors/geekclick" title="GeekClick">
+                        GeekClick
+                    </a>
+                    
+                    sur 
+                    
+                    <a href="https://www.flaticon.com/" title="Flaticon">
+                        www.flaticon.com
+                    </a>
+                </div>
+
+                <div class= "flaticonAttrib">
+                    
+                    Icône du drapeau français réalisée par 
+                    
+                    <a href="https://www.freepik.com" title="Freepik">
+                        Freepik
+                    </a>
+                    
+                    sur 
+                    
+                    <a href="https://www.flaticon.com/" title="Flaticon">
+                         www.flaticon.com
+                    </a>
+                </div>
+
+                <div class= "flaticonAttrib">
+                    
+                    Photo: iPhone Wood Background par 50fish 
+
+                    sur
+                    
+                    <a href="https://picography.co" title="Beautiful HD Free Stock Photos">
+                        Picography.co
+                    </a>
+                    
+                </div>
+
+            </div>
+        </footer>
+
+    </div>   
+    
+</body>
+</html>
