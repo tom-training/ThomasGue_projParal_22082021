@@ -20,3 +20,10 @@ main.scss rules the code of :
 
 ------------------------- Building tips ------------------------------  
 il faut que le header soit de 130 px = au noVisibleRight/rectangleHautDroit
+
+
+On peut retirer la ligne suivante pendant le développement
+"prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed/",
+
+ne pas oublier de remettre /prefixed/ dans le link style in the head
+ne pas oublier de rajouter la ligne "prefix" ci-dessus dans le package.json

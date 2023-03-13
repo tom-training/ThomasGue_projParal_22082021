@@ -596,6 +596,12 @@
     flex-wrap: nowrap;
     background-color: lightgray;
   }
+  .couvert .moreInfoWhy {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 5%;
+  }
   .couvert-hidden {
     height: 20px;
     width: 100%;
@@ -622,7 +628,7 @@
     background: radial-gradient(#202020, black);
     box-shadow: 0px 0px 5px 5px black;
     margin-bottom: 5%;
-    font-size: 0.6em;
+    font-size: 1em;
   }
   .couvert-photo .bouton {
     background-color: #9356dc;
@@ -635,12 +641,66 @@
     border-radius: 20px;
   }
   .couvert-section {
-    margin: 5%;
+    margin: 5% 0 0 5%;
     width: 90%;
     padding: 5%;
   }
   .couvert-section__blanche {
     background-color: whitesmoke;
+  }
+  .couvert-section__blanche span {
+    color: #9356dc;
+  }
+  .couvert-section__blanche .motCles {
+    color: #6094c0;
+  }
+  .couvert-section__blanche .iconKasa {
+    width: 70px;
+    max-height: 50px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconPiiquante {
+    width: 70px;
+    max-height: 50px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconKanap {
+    width: 70px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .othProjects {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .couvert-section__blanche .iconChouette {
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconOMF {
+    width: 70px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconReservia {
+    width: 70px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .ghb {
+    color: #9356dc;
   }
   .couvert-section__grise {
     background-color: lightgray;
@@ -1306,6 +1366,12 @@
     flex-wrap: nowrap;
     background-color: lightgray;
   }
+  .couvert .moreInfoWhy {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 5%;
+  }
   .couvert-hidden {
     height: 40px;
     width: 100%;
@@ -1332,7 +1398,7 @@
     background: radial-gradient(#202020, black);
     box-shadow: 0px 0px 5px 5px black;
     margin-bottom: 5%;
-    font-size: 0.6em;
+    font-size: 1em;
   }
   .couvert-photo .bouton {
     background-color: #9356dc;
@@ -1345,12 +1411,66 @@
     border-radius: 20px;
   }
   .couvert-section {
-    margin: 5%;
+    margin: 5% 5% 0 5%;
     width: 90%;
     padding: 5%;
   }
   .couvert-section__blanche {
     background-color: whitesmoke;
+  }
+  .couvert-section__blanche span {
+    color: #9356dc;
+  }
+  .couvert-section__blanche .motCles {
+    color: #6094c0;
+  }
+  .couvert-section__blanche .iconKasa {
+    width: 90px;
+    max-height: 50px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconPiiquante {
+    width: 90px;
+    max-height: 50px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconKanap {
+    width: 90px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .othProjects {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .couvert-section__blanche .iconChouette {
+    width: 60px;
+    height: 60px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconOMF {
+    width: 90px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconReservia {
+    width: 90px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .ghb {
+    color: #9356dc;
   }
   .couvert-section__grise {
     background-color: lightgray;
@@ -1375,6 +1495,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-left: 10%;
   }
   .couvert .lesChiffres .languages {
     grid-row: 2;
@@ -1382,6 +1503,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-left: 10%;
   }
   .couvert .lesChiffres .typeCompanies {
     grid-row: 1;
@@ -2002,6 +2124,12 @@
     background-color: lightgray;
     padding-top: 5%;
   }
+  .couvert .moreInfoWhy {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 3%;
+  }
   .couvert-hidden {
     display: none;
   }
@@ -2026,7 +2154,7 @@
     background: radial-gradient(#202020, black);
     box-shadow: 0px 0px 5px 5px black;
     margin-bottom: 5%;
-    font-size: 0.6em;
+    font-size: 1em;
   }
   .couvert-photo .bouton {
     background-color: #9356dc;
@@ -2039,14 +2167,69 @@
     border-radius: 20px;
   }
   .couvert-section {
-    margin: 5%;
     width: 90%;
     padding: 5%;
   }
   .couvert-section__blanche {
+    margin: 0 5% 5% 5%;
     background-color: whitesmoke;
   }
+  .couvert-section__blanche span {
+    color: #9356dc;
+  }
+  .couvert-section__blanche .motCles {
+    color: #6094c0;
+  }
+  .couvert-section__blanche .iconKasa {
+    width: 100px;
+    max-height: 50px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconPiiquante {
+    width: 100px;
+    max-height: 50px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconKanap {
+    width: 100px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .othProjects {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .couvert-section__blanche .iconChouette {
+    width: 70px;
+    height: 70px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconOMF {
+    width: 100px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconReservia {
+    width: 100px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .ghb {
+    color: #9356dc;
+  }
   .couvert-section__grise {
+    margin: 3% 5% 0 5%;
     background-color: lightgray;
   }
   .couvert .lesChiffres {
@@ -2069,6 +2252,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-left: 10%;
   }
   .couvert .lesChiffres .languages {
     grid-row: 2;
@@ -2076,6 +2260,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-left: 10%;
   }
   .couvert .lesChiffres .typeCompanies {
     grid-row: 1;
@@ -2096,7 +2281,8 @@
     grid-column: 1/3;
     text-align: center;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    padding-bottom: 30px;
   }
 
   footer {
@@ -2688,6 +2874,12 @@
     background-color: lightgray;
     padding-top: 5%;
   }
+  .couvert .moreInfoWhy {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 3%;
+  }
   .couvert-hidden {
     display: none;
   }
@@ -2712,7 +2904,7 @@
     background: radial-gradient(#202020, black);
     box-shadow: 0px 0px 5px 5px black;
     margin-bottom: 5%;
-    font-size: 0.6em;
+    font-size: 1.2em;
   }
   .couvert-photo .bouton {
     background-color: #9356dc;
@@ -2725,14 +2917,69 @@
     border-radius: 20px;
   }
   .couvert-section {
-    margin: 5%;
     width: 90%;
     padding: 5%;
   }
   .couvert-section__blanche {
+    margin: 0 5% 5% 5%;
     background-color: whitesmoke;
   }
+  .couvert-section__blanche span {
+    color: #9356dc;
+  }
+  .couvert-section__blanche .motCles {
+    color: #6094c0;
+  }
+  .couvert-section__blanche .iconKasa {
+    width: 150px;
+    max-height: 150px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconPiiquante {
+    width: 150px;
+    max-height: 150px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconKanap {
+    width: 150px;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .othProjects {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .couvert-section__blanche .iconChouette {
+    width: 105px;
+    height: 105px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconOMF {
+    width: 150px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .iconReservia {
+    width: 150px;
+    margin-right: 1em;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .couvert-section__blanche .ghb {
+    color: #9356dc;
+  }
   .couvert-section__grise {
+    margin: 3% 5% 0 5%;
     background-color: lightgray;
   }
   .couvert .lesChiffres {
@@ -2755,6 +3002,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-left: 10%;
   }
   .couvert .lesChiffres .languages {
     grid-row: 2;
@@ -2762,6 +3010,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-left: 10%;
   }
   .couvert .lesChiffres .typeCompanies {
     grid-row: 1;
@@ -2783,6 +3032,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
+    padding-bottom: 30px;
   }
 
   footer {
