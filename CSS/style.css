@@ -554,35 +554,24 @@
   }
 
   nav {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 150px;
-    position: fixed;
-    right: 0;
-    top: 400px;
-    width: 50px;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
     background-color: whitesmoke;
+    margin-top: 60px;
   }
   nav .flagSlot {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 5%;
   }
   nav #eng {
-    grid-row: 1;
-    grid-column: 1;
-    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
   }
   nav #ger {
-    grid-row: 2;
-    grid-column: 1;
-    border-bottom: 1px solid lightgray;
-  }
-  nav #fren {
-    grid-row: 3;
-    grid-column: 1;
+    border-right: 1px solid lightgray;
   }
   nav img {
     width: 20px;
@@ -628,15 +617,15 @@
     font-family: Poppins;
     background: radial-gradient(#202020, black);
     box-shadow: 0px 0px 5px 5px black;
-    margin-bottom: 5%;
-    font-size: 0.7em;
+    margin-bottom: 8%;
+    font-size: 0.6em;
   }
   .couvert-photo .bouton {
     background-color: #9356dc;
     color: white;
     font-family: Poppins;
     box-shadow: 0px 0px 5px 5px black;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     padding: 0% 2% 0% 2%;
     font-size: 0.8em;
     border-radius: 20px;
