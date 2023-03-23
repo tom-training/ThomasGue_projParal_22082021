@@ -94,7 +94,7 @@
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    bottom: 80%;
     animation: disparition 3000ms 2500ms;
     animation-fill-mode: forwards;
   }
@@ -2828,7 +2828,7 @@
     grid-column: 1;
     grid-row: 1;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: whitesmoke;
   }
@@ -2839,17 +2839,17 @@
     width: 100%;
   }
   nav #eng {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 1;
     border-right: 1px solid lightgray;
   }
   nav #ger {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 2;
     border-right: 1px solid lightgray;
   }
   nav #fren {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 3;
   }
   nav img {

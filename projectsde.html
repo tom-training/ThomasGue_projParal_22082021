@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="CSS/prefixed/experience.css">
+    
+    <script src="https://kit.fontawesome.com/e7879f2a3a.js" crossorigin="anonymous"></script> 
+
+    <title>meine Projekte</title>
+    <link rel="icon" href="/favic/favicon.ico" type="image/x-icon">
+
+    <script>
+
+        if(window.matchMedia("(max-width: 1999.99px)").matches){
+
+            function clickOpenRight(){
+            document.getElementById("noVisibleRight").style.display = "block";
+            document.getElementById("noVisibleRight").style.opacity = "1";
+            }
+
+            function clickCloseRight(){
+            
+            document.getElementById("noVisibleRight").style.display = "none";
+
+            document.getElementById("noVisibleRight").style.opacity = "0";
+            }
+            
+        }
+
+    </script>
+</head>
+<body>
+
+    <div id="mainContainer">
+
+        <header class="headerProject">
+
+            <h1 class="headerProject-title"> Projekte </h1>
+            <div>
+                <i class="fas fa-bars" onclick="clickOpenRight()" id="petiteResoIcon"> </i>
+                <i class="fas fa-solid fa-arrow-down" id="grandeResoIcon"></i>
+            </div>
+        </header>
+
+        <main>
+
+            <nav id="noVisibleRight" class="noVisibleRightProj">
+
+                <div class="rectangleHautDroit" id="rectangleHautDroitEduc"> 
+    
+                    <i class="fas fa-times iconeCroix" onclick="clickCloseRight()"></i>
+
+                    <div class="lesFlags">
+                    
+                        <div class="flagSlot" id="eng">
+                            <a href="projects.html" class="flags"> 
+                                <img rel="icon" alt="british flag" src="./CSS/images/uk.png">
+                            </a>
+                        </div>
+                       
+                        <div class="flagSlot" id="ger">
+                            <a href="projectsde.html" class="flags" > 
+                                <img rel="icon" alt="german flag" src="./CSS/images/german.png">
+                            </a>
+                        </div>
+                       
+                        <div class="flagSlot" id="fren">
+                            <a href="projectsfr.html" class="flags"> 
+                                <img rel="icon" alt="french flag" src="./CSS/images/france.png">
+                            </a>
+                        </div>
+    
+                    </div>
+    
+            
+                </div>
+
+                <div class="cadreMenu" id="cadreMenuEduc">
+
+                    <div class="cadreMenu-section">
+                        <a href="homede.html"> HOME </a>
+                        <a href="projectsde.html"> PROJEKTE </a>
+                        <a href="experiencede.html"> CV </a>
+                        <a href="educationde.html"> AUSBILDUNG </a>
+                        <a href="contactde.html"> KONTAKT </a>
+                        <a href="impressumde.html"> IMPRESSUM </a>
+                        <a href="./pdf/cvThomasGue.pdf" target="_blank"> CV PDF EN </a>
+                        <a href="./pdf/cvThomasGueDe.pdf" target="_blank"> CV PDF DE </a>
+
+                    </div>
+                </div> 
+            </nav>
+
+
+         
+            <section class="projects">
+
+                <article class="proj kasa">
+
+                    <h3 class="proj-title"> KASA: Ein Online-Portal zur Buchung und Vermietung von Unterkünften
+                    <a href="https://openclassrooms.com" target="_blank"> OpenClassRooms.com </a>
+                    </h3>
+
+                    <p class="proj-numero"> Projekt 7 auf github </p>
+                    <p class="proj-details"> Ein Frontend Projekt </p>
+		    		<ul class="proj-details">
+                        <li> Basiert auf REACT.js </li>
+                        <li> React-Umgebung installiert durch Create React App </li>
+                        <li> React-Funktionskomponenten strukturieren die Architektur </li>
+                        <li> React Router Dom verwendet, um den Router zu codieren </li>
+                        <li> Hat mich in die props, die Hooks (useState, useEffect) und JSX eingeführt</li>
+		    			
+                    </ul>
+
+                    <a href="https://tom-training.github.io/ThomasGue_7_16012023/">
+                        <img alt="application kasa" src="./CSS/images/logokasa.jpg" class="iconKasa"/>
+                    </a>
+
+		    	</article>
+
+                <article class="proj piiquante">
+
+                    <h3 class="proj-title"> API für eine fiktive App PIIQUANTE, die Bewertungen über Soßenrezepte veröffentlicht 
+                    <a href="https://openclassrooms.com" target="_blank"> OpenClassRooms.com </a>
+                    </h3>
+
+                    <p class="proj-numero"> Projekt 6 auf github </p>
+                    <p class="proj-details"> Ein Backend Projekt </p>
+		    		<ul class="proj-details">
+                        <li> Basiert auf Node.js </li>
+                        <li> die API bedient und nutzt eine MongoDB-Datenbank </li>
+                        <li> Mit Mongoose entworfene Datenbank-Modelle </li>
+                        <li> Verwendung von jsonWebToken, bcrypt and password-validator </li>
+                    
+                    </ul>
+
+                    <a href="https://github.com/tom-training/ThomasGue_6_24052022.git">
+                        <img alt="application piiquante" src="./CSS/images/logopiiquante.png" class="iconPiiquante"/>
+                    </a>
+                    
+
+		    	</article>
+
+                
+                <article class="proj kanap">
+
+                    <h3 class="proj-title"> KANAP: Eine fiktive Website, auf der Möbel verkauft werden
+                    <a href="https://openclassrooms.com" target="_blank"> OpenClassRooms.com </a>
+                    </h3>
+
+                    <p class="proj-numero"> Projekt 5 auf github </p>
+                    <p class="proj-details"> Ein Frontend Projekt </p>
+		    		<ul class="proj-details">
+                        <li> Basiert auf Node.js </li>
+                        <li> Fetch-Funktion für GET- und POST- calls </li>
+                        <li> Einsatz verschiedener js-Tools und -Methoden wie: </li>
+                        <li> localStorage, searchParams, JSON </li>
+                        <li> traditionelle Kombination von html- und js-Dateien </li>
+                        <li> JS code auf DOM-Elemente und Ereignisse zu: </li>
+                        <li> Daten lesen, sammeln und an das Backend übermitteln  </li>
+                    </ul>
+
+                    <a href="https://tom-training.github.io/ThomasGue_5_04022022/">
+                        <img alt="application kanap" src="./CSS/images/logokanap.png" class="iconKanap"/> 
+                    </a>
+
+		    	</article>
+
+                                
+                <article class="proj chouette">
+
+                    <h3 class="proj-title"> LA CHOUETTE AGENCE: Eine fiktive institutionelle Website
+                    <a href="https://openclassrooms.com" target="_blank"> OpenClassRooms.com </a>
+                    </h3>
+
+                    <p class="proj-numero"> Projekt 4 auf github </p>
+                    <p class="proj-details"> Ein Frontend Projekt </p>
+		    		<ul class="proj-details">
+                        <li> Berichtigung einer bestehenden Website </li>
+                        <li> Optimierung hinsichtlich SEO, Zugänglichkeit (WCAG), Ladezeit und Leistung </li>
+                        <li> Verwendung von Konzepten und Instrumenten wie z. B.: </li>
+                        <li> native HTML tags, aria-label, Änderung des Dateiformats </li>
+                        <li> Größenänderung und Komprimierung von Bildern </li>
+                        <li> Verwendung von lighthouse, w3c validators und Dev tools</li>
+                    </ul>
+
+                    <a href="https://tom-training.github.io/ThomasGue_4_25112021/">
+                        <img alt="la Chouette Agence" src="./CSS/images/logoChouette.png" class="iconChouette"/>
+                    </a>
+
+		    	</article>
+     
+            </section>
+
+            <section class="projectsColDeux">
+
+                <article class="proj ohMyFood">
+
+                    <h3 class="proj-title"> OH MY FOOD: Eine fiktive Restaurantverzeichnis-App
+                    <a href="https://openclassrooms.com" target="_blank"> OpenClassRooms.com </a>
+                    </h3>
+
+                    <p class="proj-numero"> Projekt 3 auf github </p>
+                    <p class="proj-details"> Ein Frontend Projekt </p>
+		    		<ul class="proj-details">
+                        <li> CSS animations: loading spinners, hover responsive elements</li>
+                        <li> Drehungen, Auftauchen und Verschwinden von Komponenten </li>
+                        <li> Verwendung von CSS properties: keyframes, transitions, pseudo-element, opacity, z-index </li>
+                        <li> Verwendung von SASS/CSS properties wie z.B.: </li>
+                        <li> @mixin, SASS maps, SASS variables, nesting syntax, the ampersand, the selector combinators, the CSS specificity</li>
+                        <li> Einarbeitung in npm-Befehle und Installation von SASS und autoprefixer </li>
+                    </ul>
+                    
+                    <a href="https://tom-training.github.io/ThomasGue_3_21092021/">
+                        <img alt="Oh My Food application" src="./CSS/images/ohmyfood.png" class="iconOhMyFood"/>
+                    </a>
+		    	</article>
+
+                
+                <article class="proj reservia">
+
+                    <h3 class="proj-title"> RESERVIA: Online-Portal zur Buchung und Vermietung von Unterkünften
+                    <a href="https://openclassrooms.com" target="_blank"> OpenClassRooms.com </a>
+                    </h3>
+
+                    <p class="proj-numero"> Projekt 2 auf github </p>
+                    <p class="proj-details"> Ein Frontend Projekt </p>
+		    		<ul class="proj-details">
+                        <li> Es konzentriert sich auf die Grundlagen von 
+                                HTML, CSS, Git und Github
+                        </li>
+                        <li> und wie man responsive Anwendungen erstellt </li>
+                        <li> Verwendung von developer tools und CSS properties: </li>
+                        <li> Flexbox, Grid, object-fit, order, flex-direction </li>
+                        <li> position, media queries </li>
+                    </ul>
+
+                    <a href="https://tom-training.github.io/ThomasGue_2_16042021/">
+                        <img alt="Reservia Application" src="./CSS/images/reservia.png" class="iconReservia"/>
+                    </a>
+
+		    	</article>
+
+            </section>
+
+            <section class="laPhotoEduc">
+
+                <figure class="laPhotoEducation">
+                    
+                    <img src="photos/circuit.jpg" alt="computer and notebook" class="lesPixEduc" id="education">
+
+                </figure>
+
+            </section>
+        
+        
+        </main>
+
+        <footer>
+            <div id="cadreFooter">
+
+                <div> 
+                    impressum
+                </div>
+
+                <div class= "flaticonAttrib">
+
+                    British and German flag icons made by 
+                    
+                    <a href="https://www.flaticon.com/authors/geekclick" title="GeekClick">
+                        GeekClick
+                    </a>
+                    
+                    from 
+                    
+                    <a href="https://www.flaticon.com/" title="Flaticon">
+                        www.flaticon.com
+                    </a>
+                </div>
+
+                <div class= "flaticonAttrib">
+                    
+                    French flag icon made by 
+                    
+                    <a href="https://www.freepik.com" title="Freepik">
+                        Freepik
+                    </a>
+                    
+                    from 
+                    
+                    <a href="https://www.flaticon.com/" title="Flaticon">
+                         www.flaticon.com
+                    </a>
+                </div>
+
+                <div class= "flaticonAttrib">
+                    
+                    Picture: Computer Circuit Card by Tim Sullivan 
+
+                    from 
+                    
+                    <a href="https://picography.co" title="Beautiful HD Free Stock Photos">
+                        Picography.co
+                    </a>
+                    
+                </div>
+
+            </div>
+        </footer>
+
+    </div>   
+    
+</body>
+</html>
